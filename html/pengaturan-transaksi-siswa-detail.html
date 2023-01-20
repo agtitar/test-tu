@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/"
+    data-template="vertical-menu-template-free">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>SMP Al Bahjah | TU-Apps </title>
+
+    <meta name="description" content="" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/boxicons-2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="fonts/boxicons.scss" />
+
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <script src="../assets/js/config.js"></script>
+
+    <!-- Tambahan -->
+    <link rel="stylesheet" href="../libs/select/select.css" />
+    <style>
+        .card-filter-side {
+            position: sticky;
+            top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="index.html" class="app-brand-link">
+                        <img class="img-fluid p-5" src="logo-tu-apps.png" alt="">
+                    </a>
+
+                    <a href="javascript:void(0);"
+                        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
+
+                <div class="menu-inner-shadow"></div>
+
+                <ul class="menu-inner py-1">
+
+                    <li class="menu-item ">
+                        <a href="index.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-dashboard"></i>
+                            <div>Beranda</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Menu utama</span>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="transaksi-siswa.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div>Transaksi Siswa</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="transaksi-pegawai.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div> Transaksi Pegawai</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="transaksi-instansi.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div> Transaksi Instansi</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="keuangan.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-bar-chart-alt-2"></i>
+                            <div>Keuangan</div>
+                        </a>
+                    </li>
+
+
+                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Pengaturan Umum</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="instansi.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-bank"></i>
+                            <div>Instansi</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="periode-waktu.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-calendar"></i>
+                            <div>Periode Waktu</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-male-female"></i>
+                            <div>Pengguna</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="pengguna-siswa.html" class="menu-link">
+                                    <div>Siswa</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pengguna-pegawai.html" class="menu-link">
+                                    <div>Pegawai</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pengguna-operator.html" class="menu-link">
+                                    <div>Operator</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bxs-graduation"></i>
+                            <div>Kelas</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="kelas.html" class="menu-link">
+                                    <div>Data Kelas</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pindah-kelas.html" class="menu-link">
+                                    <div>Penempatan Siswa</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item open active">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div>Transaksi</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item active">
+                                <a href="pengaturan-transaksi-siswa.html" class="menu-link">
+                                    <div>Dari Siswa</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pengaturan-transaksi-pegawai.html" class="menu-link">
+                                    <div>Dari Pegawai</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pengaturan-transaksi-instansi.html" class="menu-link">
+                                    <div>Dari Instansi</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Lain - lain</span></li>
+
+                    <li class="menu-item">
+                        <a href="bantuan.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-help-circle"></i>
+                            <div>Bantuan</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="riwayat.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-timer"></i>
+                            <div>Riwayat</div>
+                        </a>
+                    </li>
+
+                </ul>
+            </aside>
+
+            <div class="layout-page">
+
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                    id="layout-navbar">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+                        <div class="navbar-nav align-items-center">
+                            <div class="nav-item d-flex align-items-center">
+                                <img style="height: 50px;" src="../assets/img/logo/logo-sekolah-header.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+                            <li class="nav-item lh-1 me-3">
+                                <span class="github-button" href="#" data-icon="octicon-star" data-size="large">Faishal
+                                    Salim</span>
+                            </li>
+
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                                    data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="../assets/img/avatars/1.png" alt
+                                            class="w-px-40 h-auto rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="../assets/img/avatars/1.png" alt
+                                                            class="w-px-40 h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">Faishal Salim</span>
+                                                    <small class="text-muted">Admin Instansi</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">Profilku</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="masuk.html">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Keluar Apps</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="content-wrapper">
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="pengaturan-transaksi-siswa.html">Transaksi dari Siswa</a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <span href="javascript:void(0);">SPP Bulanan</span>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 col-12">
+                                <div class="card card-filter-side mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="badge bg-label-secondary me-1 mb-3">TA 2019 / 2020</span>
+                                            <button type="button" class="btn btn-icon btn-outline-primary"
+                                                data-bs-toggle="modal" data-bs-target="#master-transaksi-siswa">
+                                                <span class="tf-icons bx bxs-pencil"></span>
+                                            </button>
+                                        </div>
+                                        <h4 class="card-title text-primary">
+                                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                                            SPP Bulanan
+                                        </h4>
+                                        <p class="small mb-0">
+                                            Merupakan pembayaran wajib yang dilakukan tiap bulan. Periode TA 2019 /
+                                            2020 <a data-bs-toggle="collapse" href="#data-transaksi" role="button"
+                                                aria-expanded="false" aria-controls="data-transaksi">Sembunyikan
+                                                detail</a>
+                                        </p>
+                                        <div class="collapse show" id="data-transaksi">
+                                            <ul class="list-unstyled mt-3 mb-0">
+                                                <li class="d-flex align-items-center mb-3"><i
+                                                        class='bx bxs-wallet text-primary'></i><span
+                                                        class="fw-semibold mx-2">Nominal</span> <span>Rp 250.000</span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-3"><i
+                                                        class='bx bxs-star text-primary'></i><span
+                                                        class="fw-semibold mx-2">Pembayaran</span> <span>Tiap
+                                                        Bulan</span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-3"><i
+                                                        class='bx bxs-send text-primary'></i><span
+                                                        class="fw-semibold mx-2">Status</span>
+                                                    <span class="badge bg-label-secondary me-1" data-bs-toggle="tooltip"
+                                                        data-bs-offset="0,4" data-bs-placement="right"
+                                                        data-bs-html="true" title=""
+                                                        data-bs-original-title="Belum ditampilkan pada siswa">Draft</span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-3"><i
+                                                        class='bx bxs-doughnut-chart text-primary'></i><span
+                                                        class="fw-semibold mx-2">Progres</span> <span>100 / 120 siswa
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                            <div class="progress w-100 mb-3" style="height:10px;">
+                                                <div class="progress-bar bg-success" role="progressbar"
+                                                    style="width: 84.75%"></div>
+                                            </div>
+                                            <div class="text-end text-secondary small d-flex justify-content-between">
+                                                <span>Rp 23.000.000 / 25.000.000
+                                                </span> &nbsp;<span class=" text-success">(90%)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="m-0">
+                                    <div class="card-body">
+                                        <label class="text-primary fw-semibold form-label">Filter data</label>
+
+                                        <div class="row">
+                                            <div class="col-12 my-2">
+                                                <select id="namaBulanSelect" class="form-select">
+                                                    <option disabled="" selected="" value="">Pilih Bulan
+                                                    </option>
+                                                    <option value="1">Juli 2022 </option>
+                                                    <option value="2">Agustus 2022</option>
+                                                    <option value="3">September 2022</option>
+                                                    <option value="4">Oktober 2022 </option>
+                                                    <option value="5">November 2022</option>
+                                                    <option value="6">Desember 2022</option>
+                                                    <option value="7">Januari 2023 </option>
+                                                    <option value="8">Februari 2023</option>
+                                                    <option value="9">Maret 2023</option>
+                                                    <option value="10">Semua bulan</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 my-2">
+                                                <select id="namaKelasSelect" class="form-select">
+                                                    <option disabled="" selected="" value="">Pilih Kelas
+                                                    </option>
+                                                    <option value="1">Kelas I - A </option>
+                                                    <option value="2">Kelas I - B</option>
+                                                    <option value="3">Kelas I - C</option>
+                                                    <option value="4">Kelas II - A </option>
+                                                    <option value="5">Kelas II - B</option>
+                                                    <option value="6">Kelas II - C</option>
+                                                    <option value="7">Kelas III - A </option>
+                                                    <option value="8">Kelas III - B</option>
+                                                    <option value="9">Kelas III - C</option>
+                                                    <option value="10">Semua kelas</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 my-2">
+                                                <label class="text-primary fw-semibold form-label">Pembayaran</label>
+
+                                                <div class="d-flex mt-2">
+                                                    <div class="form-check me-5">
+                                                        <input class="form-check-input" type="checkbox" checked
+                                                            id="pembayaranSudah">
+                                                        <label class="form-check-label" for="pembayaranSudah">
+                                                            Sudah
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check me-5">
+                                                        <input class="form-check-input" type="checkbox" checked
+                                                            id="pembayaranBelum">
+                                                        <label class="form-check-label" for="pembayaranBelum">
+                                                            Belum
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-grid w-100 mt-3 pt-2">
+                                            <button class="btn btn-primary" data-bs-target="#upgradePlanModal"
+                                                data-bs-toggle="modal">Terapkan Filter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8 col-md-12 col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header row ">
+                                                        <div class="col-12 col-md-5">
+                                                            <h5 class="mt-2">Data ini ditampilkan berdasarkan</h5>
+                                                        </div>
+                                                        <div class="col-12 col-md-7 pe-3 text-end">
+                                                            <span class="badge bg-label-primary me-1 mb-2"
+                                                                data-bs-toggle="tooltip" data-bs-offset="0,4"
+                                                                data-bs-placement="top" data-bs-html="true" title=""
+                                                                data-bs-original-title="Hanya menampilkan data periode ini">TA
+                                                                2019 / 2020</span> <span
+                                                                class="badge bg-label-primary me-1 mb-2"
+                                                                data-bs-toggle="tooltip" data-bs-offset="0,4"
+                                                                data-bs-placement="top" data-bs-html="true" title=""
+                                                                data-bs-original-title="Pembayaran bulan ini">Juli
+                                                                2022</span>
+                                                            <span class="badge bg-label-primary me-1 mb-2"
+                                                                data-bs-toggle="tooltip" data-bs-offset="0,4"
+                                                                data-bs-placement="top" data-bs-html="true" title=""
+                                                                data-bs-original-title="Siswa pada kelas ini">Kelas I -
+                                                                A</span> <br>
+                                                            <span class="badge bg-label-danger me-1 mb-2"
+                                                                data-bs-toggle="tooltip" data-bs-offset="0,4"
+                                                                data-bs-placement="bottom" data-bs-html="true" title=""
+                                                                data-bs-original-title="Belum melakukan pembayaran">Belum
+                                                                : <b> 125</b></span> <span
+                                                                class="badge bg-label-success me-1 mb-2"
+                                                                data-bs-toggle="tooltip" data-bs-offset="0,4"
+                                                                data-bs-placement="bottom" data-bs-html="true" title=""
+                                                                data-bs-original-title="Sudah melakukan pembayaran">Sudah
+                                                                : <b> 25</b></span>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="table-responsive text-nowrap mx-2">
+                                                        <table
+                                                            class="table table-hover card-table table-striped table-borderless mb-4">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-primary">
+                                                                        Nama Siswa</th>
+                                                                    <th class="text-primary">Pembayaran</th>
+                                                                    <th class="text-primary">Tanggal</th>
+                                                                    <th class="text-primary">Aksi</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="table-border-bottom-0">
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex mt-1">
+                                                                            <img src="../assets/img/avatars/1.png"
+                                                                                alt=""
+                                                                                class="w-px-40 h-px-40 rounded-circle mt-0">
+                                                                            &emsp;
+                                                                            <div>
+                                                                                <strong>Agus Nur Hidayah</strong> <br>
+                                                                                <span class="small">Kelas I - A</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td> <span class="badge bg-label-danger me-1"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-offset="0,4"
+                                                                            data-bs-placement="right"
+                                                                            data-bs-html="true" title=""
+                                                                            data-bs-original-title="Belum melakukan pembayaran">Belum</span>
+                                                                    </td>
+                                                                    <td>Tidak tersedia</td>
+                                                                    <td>
+                                                                        <a href="transaksi-siswa-detail.html"
+                                                                            class="btn btn-outline-primary">Bayar</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex mt-1">
+                                                                            <img src="../assets/img/avatars/1.png"
+                                                                                alt=""
+                                                                                class="w-px-40 h-px-40 rounded-circle mt-0">
+                                                                            &emsp;
+                                                                            <div>
+                                                                                <strong>Agus Nur Hidayah</strong> <br>
+                                                                                <span class="small">Kelas I - A</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td> <span class="badge bg-label-success me-1"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-offset="0,4"
+                                                                            data-bs-placement="right"
+                                                                            data-bs-html="true" title=""
+                                                                            data-bs-original-title="Sudah melakukan pembayaran">Sudah</span>
+                                                                    </td>
+                                                                    <td>13 Jun 2022 13:34</td>
+                                                                    <td>
+                                                                        <div class="btn-group dropend">
+                                                                            <a href="javascript:;"
+                                                                                class="btn btn-outline-primary"
+                                                                                data-bs-target="#detail-transaksi-siswa-berhasil"
+                                                                                data-bs-toggle="modal">Detail</a>
+                                                                            <button type="button"
+                                                                                class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split"
+                                                                                data-bs-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false">
+                                                                                <span class="visually-hidden"></span>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu" style="">
+
+                                                                                <li><a class="dropdown-item"
+                                                                                        data-bs-target="#detail-transaksi-siswa-berhasil"
+                                                                                        data-bs-toggle="modal">Lihat
+                                                                                        detail</a></li>
+                                                                                <li>
+                                                                                </li>
+                                                                                <li><a class="dropdown-item"
+                                                                                        target="_blank"
+                                                                                        href="cetak-transaksi-siswa-berhasil.html">Cetak
+                                                                                        bukti</a>
+                                                                                </li>
+
+                                                                            </ul>
+                                                                        </div>
+
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="content-backdrop fade"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-overlay layout-menu-toggle"></div>
+        </div>
+
+        <!-- Modal Tambah Transaksi Siswa-->
+        <div class="modal fade" id="modal-tambah-transaksi-siswa" tabindex="-1" data-bs-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1">Tambah Transaksi Siswa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="nameBasic" class="form-label">Periode Transaksi ini</label>
+                                <input type="text" id="nameBasic" class="form-control"
+                                    placeholder="Tahun Ajaran Pembayaran" value="TA 2019 / 2020" disabled />
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="nameBasic" class="form-label">Nama Transaksi <b
+                                        class="text-danger">*</b></label>
+                                <select id="transaksiSelect" class="form-select">
+                                    <option disabled="" selected="" value="">Pilih Transaksi
+                                    </option>
+                                    <option value="1">SPP Bulanan</option>
+                                    <option value="2">LKS / Buku Pelajaran</option>
+                                    <option value="3">Seragam Sekolah Laki-laki</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="nameBasic" class="form-label">Waktu Pembayaran <b
+                                        class="text-danger">*</b></label>
+                                <select id="waktuPembayaranSelect" class="form-select">
+                                    <option disabled="" selected="" value="">Pilih Waktu
+                                    </option>
+                                    <option value="1">Sekali Saja</option>
+                                    <option value="2">Tiap Bulan</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="nameBasic" class="form-label">Nominal <b class="text-danger">*</b></label>
+                                <div class="input-group input-group-merge">
+                                    <span class="input-group-text" id="basic-default-email2">Rp</span>
+                                    <input type="text" id="basic-default-email" class="form-control" placeholder="0">
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 mb-3">
+                                <label for="nameBasic" class="form-label">Deskripsi transaksi</label>
+                                <input type="text" id="nameBasic" class="form-control"
+                                    placeholder="Tuliskan deskripsi jika perlu" required />
+                            </div>
+                            <div class="mb-3 col-12">
+                                <label for="nameBasic" class="form-label">Pilih Status</label> <br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1" checked />
+                                    <label class="form-check-label text-secondary" for="inlineRadio1">Draft
+                                        <small class="text-secondary">(<i>Tagihan transaksi ini tidak ditampilkan pada
+                                                siswa</i>)</small></label>
+                                </div>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2" />
+                                    <label class="form-check-label text-info" for="inlineRadio2">Proses
+                                        <small class="text-secondary">(<i>Tagihan transaksi ini ditampilkan pada
+                                                siswa</i>)</small></label>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Batal
+                        </button>
+                        <button type="button" class="btn btn-primary" onclick="sweet()"
+                            data-bs-dismiss="modal">Simpan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Ubah Tahun Ajaran-->
+        <div class="modal fade" id="modal-ubah-tahun-ajaran" tabindex="-1" data-bs-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1">Tambah Tahun Ajaran</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-md-12 mb-3">
+                                <label for="nameBasic" class="form-label">Label Periode <b
+                                        class="text-danger">*</b></label>
+                                <input type="text" id="nameBasic" class="form-control"
+                                    placeholder="TA Tahun mulai / Tahun akhir" value="TA 2022 / 2023" />
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="nameBasic" class="form-label">Mulai</label>
+                                <input class="form-control" type="month" id="mulai-tahun-ajaran"
+                                    placeholder="Bulan & Tahun mulai" value="2022-07">
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="nameBasic" class="form-label">Akhir</label>
+                                <input class="form-control" type="month" id="akhir0tahun-ajaran"
+                                    placeholder="Bulan & Tahun akhir" value="2023-08">
+                            </div>
+                            <div class="mb-3 col-12">
+                                <label for="nameBasic" class="form-label">Pilih Status</label> <br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1" checked />
+                                    <label class="form-check-label text-secondary" for="inlineRadio1">Draft
+                                        <small class="text-secondary">(<i>Jika Tahun Ajaran masih belum
+                                                dimulai, data tidak ditampilkan</i>)</small></label>
+                                </div>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2" />
+                                    <label class="form-check-label text-info" for="inlineRadio2">Berlangsung
+                                        <small class="text-secondary">(<i>Jika Tahun Ajaran sedang berlangsung
+                                                saat
+                                                ini, data ditampilkan</i>)</small></label>
+                                </div>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3" />
+                                    <label class="form-check-label text-success" for="inlineRadio2">Selesai
+                                        <small class="text-secondary">(<i>Jika Tahun Ajaran sudah
+                                                terlewati, data ditampilkan</i>)</small></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Batal
+                        </button>
+                        <button type="button" class="btn btn-primary" onclick="sweet()"
+                            data-bs-dismiss="modal">Simpan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Detail Berhasil Bayar Transaksi-->
+        <div class="modal fade" id="detail-transaksi-siswa-berhasil" tabindex="-1" data-bs-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Pembayaran Transaksi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="d-flex">
+                                    <img src="../assets/img/avatars/1.png" alt=""
+                                        class="w-px-40 h-px-40 rounded-circle">
+                                    &emsp;
+                                    <div>
+                                        <h5 class="mb-0 fw-bold">Agus Fakhriz</h5>
+                                        <span class="small">NIS : 712381239</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-icon rounded-pill bg-label-info">
+                                        <i class="bx bx-transfer-alt bx-sm"></i>
+                                    </button>
+                                    &emsp;
+                                    <div>
+                                        <h5 class="mb-0 fw-normal">PAY1110891031</h5>
+                                        <span class="small">14 Des 2022 12:45</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+
+                                <div class="collapse" id="saldo-uang-siswa">
+                                    <div class="mb-3">
+                                        <div class="input-group input-group-merge">
+                                            <span class="input-group-text" id="saldoTabunganTRansaksiInput">Rp</span>
+                                            <input type="text" id="saldoTabunganTRansaksiInput"
+                                                class="form-control text-end" placeholder="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-flush-spacing">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fw-semibold">
+                                                    Status Transaksi <br> <small class="fw-normal"><i>Tidak ada
+                                                            catatan</i></small>
+                                                </td>
+                                                <td class="text-end">
+                                                    <span class="badge bg-label-success me-1" data-bs-toggle="tooltip"
+                                                        data-bs-offset="0,4" data-bs-placement="right"
+                                                        data-bs-html="true" title=""
+                                                        data-bs-original-title="Status pembayaran">Berhasil</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-normal">
+                                                    SPP Bulanan (Januari 2023)
+                                                </td>
+                                                <td class="text-end">125.000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-normal">
+
+                                                    <label class="form-check-label" for="buku-paket">
+                                                        Buku Paket / LKS Semester Ganjil
+                                                    </label>
+                                                </td>
+                                                <td class="text-end">200.000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-normal">
+                                                    Seragam Sekolah (Laki - laki)
+                                                </td>
+                                                <td class="text-end">200.000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-normal">
+                                                    <i class="bx bx-wallet text-info"></i>&nbsp; Uang tabungan
+                                                    yang digunakan
+                                                </td>
+                                                <td class="text-end">- 50.000
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="bg-label-secondary d-flex justify-content-between p-3 mb-3">
+                                    <p class="text-black mb-0"> <span
+                                            class="badge badge-center rounded-pill bg-secondary">3</span>&nbsp;
+                                        Total
+                                        pembayaran</p>
+                                    <span class="text-secondary fw-bold">475.000</span>
+                                </div>
+                                <div class="">
+                                    <a class="mt-2 text-primary collapsed" data-bs-toggle="collapse"
+                                        href="#transaksiLain" role="button" aria-expanded="false"
+                                        aria-controls="transaksiLain">Riwayat transaksi
+                                    </a>
+                                </div>
+                                <div class="collapse" id="transaksiLain">
+                                    <div class="table-responsive">
+                                        <table class="table table-flush-spacing">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="fw-normal">
+                                                        13 Des 2022 10:11 oleh <span class="fw-semibold"> Nur
+                                                            Hasanah</span>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <span class="badge bg-label-success me-1"
+                                                            data-bs-toggle="tooltip" data-bs-offset="0,4"
+                                                            data-bs-placement="right" data-bs-html="true" title=""
+                                                            data-bs-original-title="Status pembayaran">Berhasil</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Tutup
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+        <script src="../assets/vendor/libs/popper/popper.js"></script>
+        <script src="../assets/vendor/js/bootstrap.js"></script>
+        <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+        <script src="../assets/vendor/js/menu.js"></script>
+
+        <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+        <script src="../assets/js/main.js"></script>
+
+        <script src="../assets/js/dashboards-analytics.js"></script>
+
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <script src="../assets/js/sweetalert.min.js"></script>
+
+        <!-- tambahan -->
+        <script src="../libs/select/select.js"></script>
+
+        <script>
+            function sweet() {
+                swal({
+                    title: "Data berhasil disimpan!",
+                    // text: "You clicked the button!",
+                    icon: "success",
+                    button: false,
+                    timer: 2000,
+                });
+            }
+        </script>
+
+        <script>
+            $("#namaBulanSelect").select2({
+                placeholder: "Pilih bulan pembayaran",
+                allowClear: true
+            });
+            $("#namaKelasSelect").select2({
+                placeholder: "Pilih kelas",
+                allowClear: true
+            });
+        </script>
+
+
+</body>
+
+</html>

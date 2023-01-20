@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/"
+    data-template="vertical-menu-template-free">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>SMP Al Bahjah | TU-Apps </title>
+
+    <meta name="description" content="" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/boxicons-2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="fonts/boxicons.scss" />
+
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="index.html" class="app-brand-link">
+                        <img class="img-fluid p-5" src="logo-tu-apps.png" alt="">
+                    </a>
+
+                    <a href="javascript:void(0);"
+                        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
+
+                <div class="menu-inner-shadow"></div>
+
+                <ul class="menu-inner py-1">
+
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-dashboard"></i>
+                            <div>Beranda</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Menu utama</span>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="siswa-umum.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div>Transaksi Siswa</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="pegawai-umum.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div> Transaksi Pegawai</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="pegawai-umum.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div> Transaksi Instansi</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="keuangan-umum.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-bar-chart-alt-2"></i>
+                            <div>Keuangan</div>
+                        </a>
+                    </li>
+
+
+                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Pengaturan Umum</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="instansi.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-bank"></i>
+                            <div>Instansi</div>
+                        </a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="periode-waktu.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-calendar"></i>
+                            <div>Periode Waktu</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-male-female"></i>
+                            <div>Pengguna</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="pengguna-siswa.html" class="menu-link">
+                                    <div>Siswa</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div>Pegawai</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div>Operator</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bxs-graduation"></i>
+                            <div>Pendidikan</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="kelas.html" class="menu-link">
+                                    <div>Kelas</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div>Pindah Kelas</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div>Transaksi</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="pengaturan-transaksi-siswa.html" class="menu-link">
+                                    <div>Dari Siswa</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div>Dari Pegawai</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div>Dari Instansi</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Lain - lain</span></li>
+
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-megaphone"></i>
+                            <div>Informasi</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-timer"></i>
+                            <div>Riwayat</div>
+                        </a>
+                    </li>
+
+                </ul>
+            </aside>
+
+            <div class="layout-page">
+
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                    id="layout-navbar">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+                        <div class="navbar-nav align-items-center">
+                            <div class="nav-item d-flex align-items-center">
+                                <img style="height: 50px;" src="../assets/img/logo/logo-sekolah-header.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+                            <li class="nav-item lh-1 me-3">
+                                <span class="github-button" href="#" data-icon="octicon-star" data-size="large">Faishal
+                                    Salim</span>
+                            </li>
+
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                                    data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="../assets/img/avatars/1.png" alt
+                                            class="w-px-40 h-auto rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="../assets/img/avatars/1.png" alt
+                                                            class="w-px-40 h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">Faishal Salim</span>
+                                                    <small class="text-muted">Admin Instansi</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">Profilku</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="masuk.html">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Keluar Apps</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="content-wrapper">
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="row">
+                            <div class="col-lg-8 mb-4 order-0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card h-100">
+                                            <div class="d-flex align-items-end row">
+                                                <div class="col-sm-8">
+                                                    <div class="card-body">
+                                                        <span class="badge bg-label-secondary me-1 mb-3">Pengaturan
+                                                            Umum</span>
+                                                        <h4 class="card-title text-primary">
+                                                            <i class="menu-icon tf-icons bx bxs-calendar"></i> Periode
+                                                            Waktu
+                                                        </h4>
+                                                        <p class="mb-4">
+                                                            Berisikan semua periode waktu yang berlangsung pada instansi
+                                                            Anda
+                                                        </p>
+
+                                                        <a type="button" class="btn btn-primary float-right"
+                                                            href="siswa-tambah.html" data-bs-toggle="modal"
+                                                            data-bs-target="#modal-tambah-tahun-ajaran">
+                                                            <span class="tf-icons bx bx-plus-medical "></span>&nbsp;
+                                                            Tahun Ajaran
+                                                        </a>
+
+                                                        <!-- <div class="btn-group">
+                                                            <button type="button"
+                                                                class="btn btn-primary dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">Tambah
+                                                                Periode </button>
+                                                            <ul class="dropdown-menu" style="">
+                                                                <li><a class="dropdown-item"
+                                                                        href="javascript:void(0);">Action</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                        href="javascript:void(0);">Another action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                        href="javascript:void(0);">Something else
+                                                                        here</a></li>
+                                                                <li>
+                                                                    <hr class="dropdown-divider">
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                        href="javascript:void(0);">Separated link</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4 text-center text-sm-left">
+                                                    <div class="card-body pb-0 px-0 px-md-4">
+                                                        <img src="../assets/img/illustrations/girl-muslim-with-laptop-light.png"
+                                                            height="140" alt="View Badge User"
+                                                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                                                            data-app-light-img="illustrations/man-with-laptop-light.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12 my-4">
+                                                <div class="card">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h5 class="card-header pt-4">Daftar tahun ajaran</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive text-nowrap mx-2">
+                                                        <table
+                                                            class="table table-hover card-table table-striped table-borderless">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-primary" style="min-width: 200px;">
+                                                                        Label Periode</th>
+                                                                    <th class="text-primary">Mulai</th>
+                                                                    <th class="text-primary">Akhir</th>
+                                                                    <th class="text-primary">Status</th>
+                                                                    <th class="text-primary">Aksi</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="table-border-bottom-0">
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="avatar">
+                                                                            <img src="../assets/img/icons/thumbnail/icon-label-ta.jpg"
+                                                                                alt=""
+                                                                                class="w-px-40 h-auto rounded-circle">
+                                                                            &nbsp;
+                                                                            <strong>TA 2021 / 2022</strong>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Agustus 2021</td>
+                                                                    <td>Juli 2022</td>
+                                                                    <td>
+                                                                        <span class="badge bg-label-secondary me-1"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-offset="0,4"
+                                                                            data-bs-placement="right"
+                                                                            data-bs-html="true" title=""
+                                                                            data-bs-original-title="Tidak ditampilkan">Draft</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <button type="button"
+                                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                                data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                                <i
+                                                                                    class="bx bx-dots-vertical-rounded"></i>
+                                                                            </button>
+                                                                            <div class="dropdown-menu" style="">
+                                                                                <a class="dropdown-item"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#modal-ubah-tahun-ajaran"><i
+                                                                                        class="bx bx-pencil me-1"></i>
+                                                                                    Ubah</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="avatar">
+                                                                            <img src="../assets/img/icons/thumbnail/icon-label-ta.jpg"
+                                                                                alt=""
+                                                                                class="w-px-40 h-auto rounded-circle">
+                                                                            &nbsp;
+                                                                            <strong>TA 2020 / 2021</strong>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Agustus 2019</td>
+                                                                    <td>Juli 2021</td>
+                                                                    <td>
+                                                                        <span class="badge bg-label-info me-1"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-offset="0,4"
+                                                                            data-bs-placement="right"
+                                                                            data-bs-html="true" title=""
+                                                                            data-bs-original-title="Ditampilkan">Berlangsung</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <button type="button"
+                                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                                data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                                <i
+                                                                                    class="bx bx-dots-vertical-rounded"></i>
+                                                                            </button>
+                                                                            <div class="dropdown-menu" style="">
+                                                                                <a class="dropdown-item"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#modal-ubah-tahun-ajaran"><i
+                                                                                        class="bx bx-pencil me-1"></i>
+                                                                                    Ubah</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="avatar">
+                                                                            <img src="../assets/img/icons/thumbnail/icon-label-ta.jpg"
+                                                                                alt=""
+                                                                                class="w-px-40 h-auto rounded-circle">
+                                                                            &nbsp;
+                                                                            <strong>TA 2019 / 2020</strong>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Agustus 2019</td>
+                                                                    <td>Juli 2020</td>
+                                                                    <td>
+                                                                        <span class="badge bg-label-success me-1"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-offset="0,4"
+                                                                            data-bs-placement="right"
+                                                                            data-bs-html="true" title=""
+                                                                            data-bs-original-title="Ditampilkan">Selesai</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <button type="button"
+                                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                                data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                                <i
+                                                                                    class="bx bx-dots-vertical-rounded"></i>
+                                                                            </button>
+                                                                            <div class="dropdown-menu" style="">
+                                                                                <a class="dropdown-item"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#modal-ubah-tahun-ajaran"><i
+                                                                                        class="bx bx-pencil me-1"></i>
+                                                                                    Ubah</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <nav aria-label="Page navigation" class="my-5">
+                                                            <ul class="pagination justify-content-center">
+                                                                <li class="page-item prev">
+                                                                    <a class="page-link" href="javascript:void(0);"><i
+                                                                            class="tf-icon bx bx-chevrons-left"></i></a>
+                                                                </li>
+                                                                <li class="page-item active">
+                                                                    <a class="page-link"
+                                                                        href="javascript:void(0);">1</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link"
+                                                                        href="javascript:void(0);">2</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link"
+                                                                        href="javascript:void(0);">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link"
+                                                                        href="javascript:void(0);">4</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link"
+                                                                        href="javascript:void(0);">5</a>
+                                                                </li>
+                                                                <li class="page-item next">
+                                                                    <a class="page-link" href="javascript:void(0);"><i
+                                                                            class="tf-icon bx bx-chevrons-right"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-4 order-1">
+                                <div class="alert alert-info" role="alert">Berikut informasi terkait fitur pada
+                                    laman
+                                    ini</div>
+                                <div class="col-md">
+
+
+                                    <div id="accordionIcon" class="accordion mt-3 accordion-without-arrow">
+                                        <div class="accordion-item my-4">
+                                            <h2 class="accordion-header text-body d-flex justify-content-between"
+                                                id="accordionIconOne">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#accordionIcon-1"
+                                                    aria-controls="accordionIcon-1" aria-expanded="false"><i
+                                                        class='bx bx-info-circle text-info'>&nbsp;</i>
+                                                    Informasi status
+                                                    Daftar tahun ajaran
+                                                </button>
+                                            </h2>
+
+                                            <div id="accordionIcon-1" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionIcon" style="">
+                                                <div class="accordion-body">
+                                                    Berisikan daftar tahun ajaran yang digunakan aplikasi dan
+                                                    sebagai acuan data dalam penentuan periode waktu oleh variabel data
+                                                    yang lain
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item my-4">
+                                            <h2 class="accordion-header text-body d-flex justify-content-between"
+                                                id="accordionIconTwo">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#accordionIcon-2"
+                                                    aria-controls="accordionIcon-2" aria-expanded="false"><i
+                                                        class='bx bx-info-circle text-info'>&nbsp;</i>
+                                                    Informasi status
+                                                    Tips tambah tahun ajaran
+                                                </button>
+                                            </h2>
+                                            <div id="accordionIcon-2" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionIcon">
+                                                <div class="accordion-body">
+                                                    Pastikan meberikan label periode yang sama untuk tiap data tahun
+                                                    pelajaran yang baru ditambahkan agar penamaan menjadi seragam dan
+                                                    memudahkan pengguna
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item my-4 ">
+                                            <h2 class="accordion-header text-body d-flex justify-content-between"
+                                                id="accordionIconThree">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#accordionIcon-3"
+                                                    aria-expanded="false" aria-controls="accordionIcon-3"> <i
+                                                        class='bx bx-info-circle text-info'>&nbsp;</i>
+                                                    Informasi status
+                                                </button>
+                                            </h2>
+                                            <div id="accordionIcon-3" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionIcon" style="">
+                                                <div class="accordion-body">
+                                                    <span class="badge bg-label-secondary me-1" data-bs-toggle="tooltip"
+                                                        data-bs-offset="0,4" data-bs-placement="right"
+                                                        data-bs-html="true" title=""
+                                                        data-bs-original-title="Tidak ditampilkan">Draft</span> berarti
+                                                    tahun ajaran belum berjalan dan data tidak akan
+                                                    ditampilkan pada opsi di menu lain. <br><br>
+                                                    <span class="badge bg-label-info me-1" data-bs-toggle="tooltip"
+                                                        data-bs-offset="0,4" data-bs-placement="right"
+                                                        data-bs-html="true" title=""
+                                                        data-bs-original-title="Ditampilkan">Berlangsung</span> berarti
+                                                    tahun ajaran sedang berjalan dan data
+                                                    akan
+                                                    ditampilkan pada opsi di menu lain. <br><br>
+                                                    <span class="badge bg-label-success me-1" data-bs-toggle="tooltip"
+                                                        data-bs-offset="0,4" data-bs-placement="right"
+                                                        data-bs-html="true" title=""
+                                                        data-bs-original-title="Ditampilkan">Selesai</span> berarti
+                                                    tahun ajaran sudah selesai / terlewati dan
+                                                    data tetap akan
+                                                    ditampilkan pada opsi di menu lain.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="content-backdrop fade"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-overlay layout-menu-toggle"></div>
+        </div>
+    </div>
+
+    <!-- Modal Tambah Tahun Ajaran-->
+    <div class="modal fade" id="modal-tambah-tahun-ajaran" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Tambah Tahun Ajaran</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-12 mb-3">
+                            <label for="nameBasic" class="form-label">Label Periode <b class="text-danger">*</b></label>
+                            <input type="text" id="nameBasic" class="form-control"
+                                placeholder="TA Tahun mulai / Tahun akhir" required />
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="nameBasic" class="form-label">Mulai</label>
+                            <input class="form-control" type="month" id="mulai-tahun-ajaran"
+                                placeholder="Bulan & Tahun mulai">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="nameBasic" class="form-label">Akhir</label>
+                            <input class="form-control" type="month" id="akhir0tahun-ajaran"
+                                placeholder="Bulan & Tahun akhir">
+                        </div>
+                        <div class="mb-3 col-12">
+                            <label for="nameBasic" class="form-label">Pilih Status</label> <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1" checked />
+                                <label class="form-check-label text-secondary" for="inlineRadio1">Draft <small
+                                        class="text-secondary">(<i>Jika Tahun Ajaran masih belum
+                                            dimulai, data tidak ditampilkan</i>)</small></label>
+                            </div>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2" />
+                                <label class="form-check-label text-info" for="inlineRadio2">Berlangsung <small
+                                        class="text-secondary">(<i>Jika Tahun Ajaran sedang berlangsung saat
+                                            ini, data ditampilkan</i>)</small></label>
+                            </div>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                    value="option3" />
+                                <label class="form-check-label text-success" for="inlineRadio2">Selesai <small
+                                        class="text-secondary">(<i>Jika Tahun Ajaran sudah
+                                            terlewati, data ditampilkan</i>)</small></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                        Batal
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="sweet()"
+                        data-bs-dismiss="modal">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ubah Tahun Ajaran-->
+    <div class="modal fade" id="modal-ubah-tahun-ajaran" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Tambah Tahun Ajaran</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-12 mb-3">
+                            <label for="nameBasic" class="form-label">Label Periode <b class="text-danger">*</b></label>
+                            <input type="text" id="nameBasic" class="form-control"
+                                placeholder="TA Tahun mulai / Tahun akhir" value="TA 2022 / 2023" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="nameBasic" class="form-label">Mulai</label>
+                            <input class="form-control" type="month" id="mulai-tahun-ajaran"
+                                placeholder="Bulan & Tahun mulai" value="2022-07">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="nameBasic" class="form-label">Akhir</label>
+                            <input class="form-control" type="month" id="akhir0tahun-ajaran"
+                                placeholder="Bulan & Tahun akhir" value="2023-08">
+                        </div>
+                        <div class="mb-3 col-12">
+                            <label for="nameBasic" class="form-label">Pilih Status</label> <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1" checked />
+                                <label class="form-check-label text-secondary" for="inlineRadio1">Draft <small
+                                        class="text-secondary">(<i>Jika Tahun Ajaran masih belum
+                                            dimulai, data tidak ditampilkan</i>)</small></label>
+                            </div>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2" />
+                                <label class="form-check-label text-info" for="inlineRadio2">Berlangsung <small
+                                        class="text-secondary">(<i>Jika Tahun Ajaran sedang berlangsung saat
+                                            ini, data ditampilkan</i>)</small></label>
+                            </div>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                    value="option3" />
+                                <label class="form-check-label text-success" for="inlineRadio2">Selesai <small
+                                        class="text-secondary">(<i>Jika Tahun Ajaran sudah
+                                            terlewati, data ditampilkan</i>)</small></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                        Batal
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="sweet()"
+                        data-bs-dismiss="modal">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+
+    <script src="../assets/js/dashboards-analytics.js"></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="../assets/js/sweetalert.min.js"></script>
+
+    <script>
+        function sweet() {
+            swal({
+                title: "Data berhasil disimpan!",
+                // text: "You clicked the button!",
+                icon: "success",
+                button: false,
+                timer: 2000,
+            });
+        }
+    </script>
+</body>
+
+</html>

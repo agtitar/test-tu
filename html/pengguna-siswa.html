@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/"
+    data-template="vertical-menu-template-free">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>SMP Al Bahjah | TU-Apps </title>
+
+    <meta name="description" content="" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/boxicons-2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="fonts/boxicons.scss" />
+
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <script src="../assets/js/config.js"></script>
+
+    <!-- Tambahan -->
+    <link rel="stylesheet" href="../libs/select/select.css" />
+    <link rel="stylesheet" href="../assets/css/page-instansi.css">
+
+    <style>
+        .bg-pattern-siswa {
+            background-color: #9396FF;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%239396FF'/%3E%3Cstop offset='1' stop-color='%237B57FA'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='500' height='200' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+            background-attachment: fixed;
+            background-size: cover;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="index.html" class="app-brand-link">
+                        <img class="img-fluid p-5" src="logo-tu-apps.png" alt="">
+                    </a>
+
+                    <a href="javascript:void(0);"
+                        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
+
+                <div class="menu-inner-shadow"></div>
+
+                <ul class="menu-inner py-1">
+
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-dashboard"></i>
+                            <div>Beranda</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Menu utama</span>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="transaksi-siswa.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div>Transaksi Siswa</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="transaksi-pegawai.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div> Transaksi Pegawai</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="transaksi-instansi.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div> Transaksi Instansi</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="keuangan.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-bar-chart-alt-2"></i>
+                            <div>Keuangan</div>
+                        </a>
+                    </li>
+
+
+                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Pengaturan Umum</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="instansi.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-bank"></i>
+                            <div>Instansi</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="periode-waktu.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-calendar"></i>
+                            <div>Periode Waktu</div>
+                        </a>
+                    </li>
+                    <li class="menu-item open active">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-male-female"></i>
+                            <div>Pengguna</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item  active">
+                                <a href="pengguna-siswa.html" class="menu-link">
+                                    <div>Siswa</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pengguna-pegawai.html" class="menu-link">
+                                    <div>Pegawai</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pengguna-operator.html" class="menu-link">
+                                    <div>Operator</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bxs-graduation"></i>
+                            <div>Pendidikan</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="kelas.html" class="menu-link">
+                                    <div>Tingkat Kelas</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pindah-kelas.html" class="menu-link">
+                                    <div>Pindah Kelas</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+                            <div>Transaksi</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="pengaturan-transaksi-siswa.html" class="menu-link">
+                                    <div>Dari Siswa</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pengaturan-transaksi-pegawai.html" class="menu-link">
+                                    <div>Dari Pegawai</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pengaturan-transaksi-instansi.html" class="menu-link">
+                                    <div>Dari Instansi</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Lain - lain</span></li>
+
+                    <li class="menu-item">
+                        <a href="bantuan.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-help-circle"></i>
+                            <div>Bantuan</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="riwayat.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-timer"></i>
+                            <div>Riwayat</div>
+                        </a>
+                    </li>
+
+                </ul>
+            </aside>
+
+            <div class="layout-page">
+
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                    id="layout-navbar">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+                        <div class="navbar-nav align-items-center">
+                            <div class="nav-item d-flex align-items-center">
+                                <img style="height: 50px;" src="../assets/img/logo/logo-sekolah-header.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+                            <li class="nav-item lh-1 me-3">
+                                <span class="github-button" href="#" data-icon="octicon-star" data-size="large">Faishal
+                                    Salim</span>
+                            </li>
+
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                                    data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="../assets/img/avatars/1.png" alt
+                                            class="w-px-40 h-auto rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="../assets/img/avatars/1.png" alt
+                                                            class="w-px-40 h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">Faishal Salim</span>
+                                                    <small class="text-muted">Admin Instansi</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">Profilku</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="masuk.html">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Keluar Apps</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <div class="content-wrapper">
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="row">
+                            <div class="col-12 mb-2 order-0">
+                                <div class="alert alert-info text-dark alert-dismissible" role="alert">Berikut adalah
+                                    data semua siswa
+                                    yang dapat Anda lihat berdasarkan informasi yang tersedia <button type="button"
+                                        class="btn-close ml-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-4 order-0">
+                                <!-- Hoverable Table rows -->
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-md-5 col-12">
+                                            <h5 class="card-header pt-4">Daftar Siswa</h5>
+                                        </div>
+                                        <div class="col-md-7 col-12">
+                                            <div class="row py-4 px-3">
+                                                <div class="col-12 col-md-5 pb-3">
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i
+                                                                class="tf-icons bx bx-search"></i></span>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Cari nama siswa...">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 pb-3">
+                                                    <select id="largeSelect" class="form-select form-select-md ">
+                                                        <option value="">Semua Kelas
+                                                        </option>
+                                                        <option value="1">I-A</option>
+                                                        <option value="2">I-B</option>
+                                                        <option value="3">I-C</option>
+                                                        <option value="4">I-D</option>
+                                                        <option value="1">II-A</option>
+                                                        <option value="2">II-B</option>
+                                                        <option value="3">II-C</option>
+                                                        <option value="4">II-D</option>
+                                                        <option value="1">III-A</option>
+                                                        <option value="2">III-B</option>
+                                                        <option value="3">III-C</option>
+                                                        <option value="4">III-D</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 col-md-3 text-end">
+                                                    <a type="button" class="btn btn-primary w-100"
+                                                        href="siswa-tambah.html">
+                                                        <span class="tf-icons bx bx-plus"></span>&nbsp; Data Siswa
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive text-nowrap">
+                                        <table class="table table-hover card-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-primary" style="min-width: 200px;">Nama Siswa</th>
+                                                    <th class="text-primary">Jenis Kelamin</th>
+                                                    <th class="text-primary">Info Pendidikan</th>
+                                                    <th class="text-primary">Status Siswa</th>
+                                                    <th class="text-primary">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="table-border-bottom-0">
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="siswa-detail.html"><i
+                                                                        class="bx bx-user me-1"></i> Lihat
+                                                                    Detail</a>
+                                                                <a class="dropdown-item"
+                                                                    href="siswa-tambah-edit.html"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <nav aria-label="Page navigation" class="my-5">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item prev">
+                                                    <a class="page-link" href="javascript:void(0);"><i
+                                                            class="tf-icon bx bx-chevrons-left"></i></a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0);">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0);">2</a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="javascript:void(0);">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0);">4</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0);">5</a>
+                                                </li>
+                                                <li class="page-item next">
+                                                    <a class="page-link" href="javascript:void(0);"><i
+                                                            class="tf-icon bx bx-chevrons-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!--/ Hoverable Table rows -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Modal Pembayaran-->
+                    <div class="modal fade" id="modal-pembayaran" tabindex="-1" data-bs-backdrop="static">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel1">Konfirmasi Pembayaran</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">ID Pembayaran</label>
+                                            <input type="text" id="nameBasic" class="form-control" value="PSMP1290123"
+                                                disabled />
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">Waktu Pembayaran</label>
+                                            <input type="text" id="nameBasic" class="form-control"
+                                                value="2 Septembr 2023 13:23 " disabled />
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="accordion accordion-without-arrow" id="accordion-detail-bayar">
+                                            <div class="card accordion-item active">
+                                                <h2 class="accordion-header" id="accordion-detail-pembayaran">
+                                                    <button type="button" class="accordion-button "
+                                                        data-bs-toggle="collapse" data-bs-target="#detail-pembayaran"
+                                                        aria-expanded="true" aria-controls="detail-pembayaran">
+                                                        <div class=" pe-3">
+                                                            <img src="../assets/img/icons/unicons/wallet.png" alt=""
+                                                                class="w-px-40 h-auto rounded-circle">
+                                                        </div>
+                                                        <div class="row w-100">
+                                                            <div class="col-12 col-md-8">
+                                                                <p class="mb-0 small text-secondary fw-normal">Nama
+                                                                    Pembayaran</p>Gaji Bulan Maret
+                                                                (MI)
+                                                            </div>
+                                                            <div class="col-12 col-md-4">
+                                                                <p class="mb-0 small text-secondary fw-normal">Total
+                                                                    Pembayaran</p>Rp
+                                                                2.400.00
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </h2>
+
+                                                <div id="detail-pembayaran" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion-detail-bayar">
+                                                    <div class="accordion-body">
+                                                        <div class="demo-inline-spacing mt-3">
+                                                            <div class="list-group list-group-flush">
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                                                    Gaji Pokok <span class="ml-auto text-success">
+                                                                        + 1.150.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                                                    Tunjangan Keahlian IV<span
+                                                                        class="ml-auto text-success">
+                                                                        + 850.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                                                    Tunjangan Wali Kelas <span
+                                                                        class="ml-auto text-success">
+                                                                        + 250.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                                                    Iuran Kas Guru<span class="ml-auto text-danger">-
+                                                                        50.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                                                    Tunjangan Keluarga<span
+                                                                        class="ml-auto text-success">+
+                                                                        200.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center fw-bold">
+                                                                    Total yang harus dibayarkan<span class="ml-auto">
+                                                                        Rp 2.400.000</span></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col mt-3 mb-0">
+                                            <label for="nameBasic" class="form-label">Catatan</label>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="Tuliskan catatan terkait pembayaran ini ..."
+                                                    aria-describedby="floatingInputHelp">
+                                                <label for="floatingInput">Tuliskan catatan jika terdapat informasi
+                                                    penting terkait
+                                                    pembayaran</label>
+
+                                            </div>
+                                            <br>
+                                            <div class="col-md">
+                                                <label for="nameBasic" class="form-label">Status Pembayaran</label>
+                                                <div class="form-check">
+                                                    <input name="default-radio-1" class="form-check-input" type="radio"
+                                                        value="" id="defaultRadio1" checked>
+                                                    <label class="form-check-label" for="defaultRadio1"> Pembayaran
+                                                        Belum Lunas</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input name="default-radio-1" class="form-check-input" type="radio"
+                                                        value="" id="defaultRadio2">
+                                                    <label class="form-check-label" for="defaultRadio2"> Pembayaran
+                                                        Lunas</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                        Batal
+                                    </button>
+                                    <button type="button" class="btn btn-primary" onclick="sweet()"
+                                        data-bs-dismiss="modal">Konfirmasi
+                                        Pembayaran</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Batal Pembayaran-->
+                    <div class="modal fade" id="modal-batal-pembayaran" tabindex="-1" data-bs-backdrop="static">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel1">Konfirmasi Pembayaran</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">ID Pembayaran</label>
+                                            <input type="text" id="nameBasic" class="form-control" value="PSMP1290123"
+                                                disabled />
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">Waktu Pembayaran</label>
+                                            <input type="text" id="nameBasic" class="form-control"
+                                                value="2 Septembr 2023 13:23 " disabled />
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="accordion accordion-without-arrow" id="accordion-detail-bayar">
+                                            <div class="card accordion-item active">
+                                                <h2 class="accordion-header" id="accordion-detail-pembayaran">
+                                                    <button type="button" class="accordion-button "
+                                                        data-bs-toggle="collapse" data-bs-target="#detail-pembayaran"
+                                                        aria-expanded="true" aria-controls="detail-pembayaran">
+                                                        <div class=" pe-3">
+                                                            <img src="../assets/img/icons/unicons/wallet.png" alt=""
+                                                                class="w-px-40 h-auto rounded-circle">
+                                                        </div>
+                                                        <div class="row w-100">
+                                                            <div class="col-12 col-md-8">
+                                                                <p class="mb-0 small text-secondary fw-normal">Nama
+                                                                    Pembayaran</p>SPP Bulan
+                                                                Januari
+                                                                (MI)
+                                                            </div>
+                                                            <div class="col-12 col-md-4">
+                                                                <p class="mb-0 small text-secondary fw-normal">Total
+                                                                    Pembayaran</p>Rp
+                                                                550.000
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </h2>
+
+                                                <div id="detail-pembayaran" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion-detail-bayar">
+                                                    <div class="accordion-body">
+                                                        <div class="demo-inline-spacing mt-3">
+                                                            <div class="list-group list-group-flush">
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                                                    Biaya
+                                                                    SPP Bulanan Madrasah Ibtidaiyah <span
+                                                                        class="ml-auto text-danger">-
+                                                                        250.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Biaya
+                                                                    Biaya Konsumsi Bulanan<span
+                                                                        class="ml-auto text-danger">-
+                                                                        100.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Biaya
+                                                                    Biaya Diniyah <span class="ml-auto text-danger">-
+                                                                        80.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Biaya
+                                                                    Syahriah Wajib<span class="ml-auto text-danger">-
+                                                                        50.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Biaya
+                                                                    Bantuan untuk berprestasi<span
+                                                                        class="ml-auto text-success">+
+                                                                        200.000</span></span>
+                                                                <span
+                                                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center fw-bold">
+                                                                    Total yang harus dibayarkan<span class="ml-auto">
+                                                                        Rp 550.000</span></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col mt-3 mb-0">
+                                            <label for="nameBasic" class="form-label">Catatan</label>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="Tuliskan catatan terkait pembayaran ini ..."
+                                                    aria-describedby="floatingInputHelp">
+                                                <label for="floatingInput">Tuliskan catatan jika terdapat informasi
+                                                    penting terkait
+                                                    pembayaran</label>
+
+                                            </div>
+                                            <br>
+                                            <div class="col-md">
+                                                <label for="nameBasic" class="form-label">Status Pembayaran</label>
+                                                <div class="form-check">
+                                                    <input name="default-radio-1" class="form-check-input" type="radio"
+                                                        value="" id="defaultRadio1">
+                                                    <label class="form-check-label" for="defaultRadio1"> Pembayaran
+                                                        Belum Lunas</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input name="default-radio-1" class="form-check-input" type="radio"
+                                                        value="" id="defaultRadio2" checked>
+                                                    <label class="form-check-label" for="defaultRadio2"> Pembayaran
+                                                        Lunas</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                        Batal
+                                    </button>
+                                    <button type="button" class="btn btn-primary" onclick="sweet()"
+                                        data-bs-dismiss="modal">Konfirmasi
+                                        Pembayaran</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Tambah Tabungan-->
+                    <div class="modal fade" id="modal-data-tabungan" tabindex="-1" data-bs-backdrop="static">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Transaksi Tabungan
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">ID Transaksi Tabungan</label>
+                                            <input type="text" id="nameBasic" class="form-control" value="TMI1290123"
+                                                disabled />
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">Waktu Transaksi</label>
+                                            <input type="date" id="nameBasic" class="form-control" required />
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <label for="nameBasic" class="form-label">Nama Transaksi
+                                                Tabungan</label>
+                                            <input type="text" id="nameBasic" class="form-control" value=""
+                                                placeholder="Isikan dengan nama tabungan yang akan disetorkan"
+                                                required />
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-6">
+                                            <label for="nameBasic" class="form-label">Pilih Jenis Transaksi</label>
+                                            <br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1" checked />
+                                                <label class="form-check-label" for="inlineRadio1">Penambahan
+                                                    Saldo</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2" />
+                                                <label class="form-check-label" for="inlineRadio2">Pengurangan
+                                                    Saldo</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">Nominal Transaksi (Rp)</label>
+                                            <input type="text" id="nameBasic" class="form-control"
+                                                placeholder="Isikan nominal transaksi" value="" required />
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <label for="nameBasic" class="form-label">Catatan</label>
+                                            <input type="text" id="nameBasic" class="form-control"
+                                                placeholder="Masukkan catatan jika perlu" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                        Batal
+                                    </button>
+                                    <button type="button" class="btn btn-primary" onclick="sweet()"
+                                        data-bs-dismiss="modal">Konfirmasi
+                                        Transaksi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Tambah Informasi Siswa-->
+                    <div class="modal fade" id="modal-data-info-siswa" tabindex="-1" data-bs-backdrop="static">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Informasi Siswa</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">Nama Siswa</label>
+                                            <input type="text" id="nameBasic" class="form-control" value="Agus Salim"
+                                                disabled />
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">Pendidikan</label>
+                                            <input type="text" id="nameBasic" class="form-control" value="MI Kelas V-B"
+                                                disabled />
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">Waktu Pelaksanaan</label>
+                                            <input type="date" id="nameBasic" class="form-control" required />
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nameBasic" class="form-label">Judul Informasi</label>
+                                            <input type="text" id="nameBasic" class="form-control" value=""
+                                                placeholder="Isikan dengan judul informasi" required />
+                                        </div>
+                                        <div class="mb-3 col-12">
+                                            <label for="nameBasic" class="form-label">Pilih Jenis Keterangan</label>
+                                            <br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1" checked />
+                                                <label class="form-check-label text-primary for="
+                                                    inlineRadio1">Informasi <small class="text-secondary">(<i>Jika
+                                                            informasi
+                                                            berupa informasi umum terkait siswa</i>)</small></label>
+                                            </div>
+                                            <br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2" />
+                                                <label class="form-check-label text-success for=" inlineRadio2">Prestasi
+                                                    <small class="text-secondary">(<i>Jika informasi
+                                                            berupa prestasi yang diraih oleh
+                                                            siswa</i>)</small></label>
+                                            </div>
+                                            <br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3" />
+                                                <label class="form-check-label text-danger"
+                                                    for="inlineRadio2">Pelanggaran <small
+                                                        class="text-secondary">(<i>Jika
+                                                            informasi
+                                                            berupa pelanggaran yang dilakukan
+                                                            siswa</i>)</small></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <label for="nameBasic" class="form-label">Catatan</label>
+                                            <input type="text" id="nameBasic" class="form-control"
+                                                placeholder="Masukkan catatan jika perlu" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                        Batal
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Simpan Informasi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+                    <script src="../assets/vendor/libs/popper/popper.js"></script>
+                    <script src="../assets/vendor/js/bootstrap.js"></script>
+                    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+                    <script src="../assets/vendor/js/menu.js"></script>
+
+                    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+                    <script src="../assets/js/main.js"></script>
+
+                    <script src="../assets/js/dashboards-analytics.js"></script>
+
+                    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+                    <script src="../assets/js/sweetalert.min.js"></script>
+
+                    <!-- tambahan -->
+                    <script src="../libs/select/select.js"></script>
+
+                    <script>
+                        function sweet() {
+                            swal({
+                                title: "Data berhasil disimpan!",
+                                // text: "You clicked the button!",
+                                icon: "success",
+                                button: false,
+                                timer: 2000,
+                            });
+                        }
+                    </script>
+
+                    <script>
+                        $("#namaBulanSelect").select2({
+                            placeholder: "Pilih bulan pembayaran",
+                            allowClear: true
+                        });
+                        $("#namaKelasSelect").select2({
+                            placeholder: "Pilih kelas",
+                            allowClear: true
+                        });
+                    </script>
+
+</body>
+
+</html>
