@@ -71,13 +71,13 @@
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Menu utama</span>
                     </li>
-                    <li class="menu-item active">
+                    <li class="menu-item">
                         <a href="transaksi-siswa.html" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
                             <div>Transaksi Siswa</div>
                         </a>
                     </li>
-                    <li class="menu-item ">
+                    <li class="menu-item  active">
                         <a href="transaksi-pegawai.html" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
                             <div> Transaksi Pegawai</div>
@@ -288,19 +288,14 @@
                                                             Utama</span>
                                                         <h4 class="card-title text-primary">
                                                             <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
-                                                            Transaksi Siswa
+                                                            Transaksi Pegawai
                                                         </h4>
                                                         <p class="mb-4">
-                                                            Berisikan semua transaksi yang diterapkan pada siswa pada
+                                                            Berisikan semua transaksi yang diterapkan pada pegawai pada
                                                             instansi
                                                             Anda
                                                         </p>
 
-                                                        <div class="col-12 col-md-4 my-2">
-
-                                                            <input type="text" id="saldoTabunganTRansaksiInput"
-                                                                class="form-control" disabled value="TA 2019 / 2020">
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4 text-center text-sm-left">
@@ -319,37 +314,34 @@
                                             <div class="card-header pt-4">
 
                                                 <div class="row">
-
                                                     <div class="col-12 col-md-4 my-2">
-                                                        <select id="namaKelasSelect" class="form-select">
-                                                            <option disabled="" selected="" value="">Pilih Kelas
+                                                        <select id="jabatanSelect" class="form-select">
+                                                            <option disabled="" selected="" value="">Pilih jabatan
                                                             </option>
-                                                            <option value="1">Kelas I - A </option>
-                                                            <option value="2">Kelas I - B</option>
-                                                            <option value="3">Kelas I - C</option>
-                                                            <option value="4">Kelas II - A </option>
-                                                            <option value="5">Kelas II - B</option>
-                                                            <option value="6">Kelas II - C</option>
-                                                            <option value="7">Kelas III - A </option>
-                                                            <option value="8">Kelas III - B</option>
-                                                            <option value="9">Kelas III - C</option>
-                                                            <option value="10">Semua kelas</option>
+                                                            <option value="1">Kepala Sekolah </option>
+                                                            <option value="2">Sekretaris</option>
+                                                            <option value="3">Bendahara</option>
+                                                            <option value="4">Wali Kelas </option>
+                                                            <option value="5" selected>Guru</option>
+                                                            <option value="6">Semua jabatan</option>
                                                         </select>
                                                     </div>
+
                                                     <div class="col-12 col-md-4 my-2">
                                                         <select id="statusSelect" class="form-select">
                                                             <option disabled="" selected="" value="">Pilih status
                                                             </option>
                                                             <option value="1">Lunas </option>
                                                             <option value="2">Belum Lunas</option>
-                                                            <option value="3">Semuanya</option>
+                                                            <option value="3" selected>Semuanya</option>
                                                         </select>
                                                     </div>
 
                                                     <div class="col-12 col-md-4 align-items-center d-flex my-2"> <input
-                                                            type="search" class="form-control" placeholder="Cari siswa">
+                                                            type="search" class="form-control"
+                                                            placeholder="Cari pegawai">
                                                         &emsp;
-                                                        <a href="transaksi-siswa-search.html" type="button"
+                                                        <a href="transaksi-pegawai-search.html" type="button"
                                                             class="btn btn-icon btn-primary">
                                                             <span class='bx bx-search-alt h4 pt-3 text-white'></span>
                                                         </a>
@@ -357,6 +349,132 @@
                                                 </div>
                                             </div>
 
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12 my-4">
+                                                <div class="card">
+                                                    <div class="card-header row ">
+                                                        <div class="col-12 col-md-5">
+                                                            <h5 class="mt-2">Data ini ditampilkan berdasarkan</h5>
+                                                        </div>
+                                                        <div class="col-12 col-md-7 pe-3 text-end">
+                                                            <span class="badge bg-label-primary me-1 mb-2"
+                                                                data-bs-toggle="tooltip" data-bs-offset="0,4"
+                                                                data-bs-placement="top" data-bs-html="true" title=""
+                                                                data-bs-original-title="Jabatan pegawai ini">Guru</span>
+                                                            <span class="badge bg-label-primary me-1 mb-2"
+                                                                data-bs-toggle="tooltip" data-bs-offset="0,4"
+                                                                data-bs-placement="top" data-bs-html="true" title=""
+                                                                data-bs-original-title="Status transaksi">Semuanya</span>
+                                                            <br>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="table-responsive text-nowrap mx-2">
+                                                        <table
+                                                            class="table table-hover card-table table-striped table-borderless mb-4">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-primary">
+                                                                        Nama Pegawai</th>
+                                                                    <th class="text-primary">Status Pembayaran</th>
+                                                                    <th class="text-primary">Nominal</th>
+                                                                    <th class="text-primary">Aksi</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="table-border-bottom-0">
+                                                                <tr>
+                                                                    <td>
+                                                                        <a class="d-flex mt-1 text-secondary"
+                                                                            href="transaksi-pegawai-detail.html">
+                                                                            <img src="../assets/img/avatars/muslimah-1.png"
+                                                                                alt=""
+                                                                                class="w-px-40 h-px-40 rounded-circle mt-0">
+                                                                            &emsp;
+                                                                            <div>
+                                                                                <strong class="text-black">Nur
+                                                                                    Muftah</strong> <br>
+                                                                                <span class="small">Guru, Wali Kelas,
+                                                                                    dan Bendahara</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                    <td> <span class="badge bg-label-danger me-1"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-offset="0,4"
+                                                                            data-bs-placement="right"
+                                                                            data-bs-html="true" title=""
+                                                                            data-bs-original-title="Terdapat tagihan pembayaran">Belum
+                                                                            Lunas</span>
+                                                                    </td>
+                                                                    <td>2.250.000</td>
+                                                                    <td>
+                                                                        <div class="btn-group dropend">
+                                                                            <a href="javascript:;"
+                                                                                class="btn btn-outline-primary"
+                                                                                data-bs-target="#bayar-transaksi-siswa"
+                                                                                data-bs-toggle="modal">Bayar</a>
+                                                                            <button type="button"
+                                                                                class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split"
+                                                                                data-bs-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false">
+                                                                                <span class="visually-hidden"></span>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li><a class="dropdown-item"
+                                                                                        data-bs-target="#bayar-transaksi-siswa"
+                                                                                        data-bs-toggle="modal">Bayar
+                                                                                        sekarang</a></li>
+                                                                                <li>
+                                                                                <li><a class="dropdown-item"
+                                                                                        href="transaksi-pegawai-detail.html">Lihat
+                                                                                        detail</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="transaksi-pegawai-detail.html"
+                                                                            class="d-flex mt-1 text-secondary">
+                                                                            <img src="../assets/img/avatars/muslimah-2.png"
+                                                                                alt=""
+                                                                                class="w-px-40 h-px-40 rounded-circle mt-0">
+                                                                            &emsp;
+                                                                            <div>
+                                                                                <strong class="text-black">Cahya
+                                                                                    Ningsih</strong> <br>
+                                                                                <span class="small">Guru, Wali Kelas,
+                                                                                    dan Bendahara</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                    <td> <span class="badge bg-label-success me-1"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-offset="0,4"
+                                                                            data-bs-placement="right"
+                                                                            data-bs-html="true" title=""
+                                                                            data-bs-original-title="Tidak ada tagihan pembayaran">Lunas</span>
+                                                                    </td>
+                                                                    <td>Tidak tersedia</td>
+                                                                    <td>
+                                                                        <a href="transaksi-pegawai-detail-status-berhasil.html"
+                                                                            class="btn btn-outline-primary">Detail</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -378,17 +496,16 @@
                                                     data-bs-toggle="collapse" data-bs-target="#accordionIcon-1"
                                                     aria-controls="accordionIcon-1" aria-expanded="false"><i
                                                         class='bx bx-info-circle text-info'>&nbsp;</i>
-                                                    Melakukan transaksi siswa
+                                                    Melakukan transaksi pegawai
                                                 </button>
                                             </h2>
 
                                             <div id="accordionIcon-1" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionIcon">
                                                 <div class="accordion-body">
-                                                    Pastika, Anda telah memilih filter data yang sesuai berdasarkan
-                                                    Tahun
-                                                    Ajaran, Nama Kelas, dan
-                                                    masukkan nama siswa. Kemudian tekan tombol
+                                                    Pastikan Anda telah memilih filter data yang sesuai berdasarkan
+                                                    Jabatan dan
+                                                    masukkan nama pegawai, kemudian tekan tombol
                                                     <span class="bx bx-search-alt text-primary h5 mb-0"></span>
                                                 </div>
                                             </div>
@@ -412,13 +529,13 @@
                                                         data-bs-html="true" title=""
                                                         data-bs-original-title="Terdapat tagihan pembayaran">Belum
                                                         Lunas</span>
-                                                    berarti siswa yang bersangkutan memiliki tagihan pembayaran yang
+                                                    berarti pegawai yang bersangkutan memiliki tagihan pembayaran yang
                                                     perlu dibayarankan pada bulan ini. <br><br>
                                                     <span class="badge bg-label-success me-1" data-bs-toggle="tooltip"
                                                         data-bs-offset="0,4" data-bs-placement="right"
                                                         data-bs-html="true" title=""
                                                         data-bs-original-title="Ditampilkan">Lunas</span>
-                                                    berarti siswa yang bersangkutan tidak memiliki tagihan pembayaran
+                                                    berarti pegawai yang bersangkutan tidak memiliki tagihan pembayaran
                                                     yang
                                                     perlu dibayarankan pada bulan ini.
                                                 </div>
@@ -438,168 +555,50 @@
             <div class="layout-overlay layout-menu-toggle"></div>
         </div>
 
-        <!-- Modal Tambah Transaksi Siswa-->
-        <div class="modal fade" id="modal-tambah-transaksi-siswa" tabindex="-1" data-bs-backdrop="static">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel1">Tambah Transaksi Siswa</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12 col-md-6 mb-3">
-                                <label for="nameBasic" class="form-label">Periode Transaksi ini</label>
-                                <input type="text" id="nameBasic" class="form-control"
-                                    placeholder="Tahun Ajaran Pembayaran" value="TA 2019 / 2020" disabled />
-                            </div>
-                            <div class="col-12 col-md-6 mb-3">
-                                <label for="nameBasic" class="form-label">Nama Transaksi <b
-                                        class="text-danger">*</b></label>
-                                <select id="transaksiSelect" class="form-select">
-                                    <option disabled="" selected="" value="">Pilih Transaksi
-                                    </option>
-                                    <option value="1">SPP Bulanan</option>
-                                    <option value="2">LKS / Buku Pelajaran</option>
-                                    <option value="3">Seragam Sekolah Laki-laki</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-md-6 mb-3">
-                                <label for="nameBasic" class="form-label">Waktu Pembayaran <b
-                                        class="text-danger">*</b></label>
-                                <select id="waktuPembayaranSelect" class="form-select">
-                                    <option disabled="" selected="" value="">Pilih Waktu
-                                    </option>
-                                    <option value="1">Sekali Saja</option>
-                                    <option value="2">Tiap Bulan</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-md-6 mb-3">
-                                <label for="nameBasic" class="form-label">Nominal <b class="text-danger">*</b></label>
-                                <div class="input-group input-group-merge">
-                                    <span class="input-group-text" id="basic-default-email2">Rp</span>
-                                    <input type="text" id="basic-default-email" class="form-control" placeholder="0">
-
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-12 mb-3">
-                                <label for="nameBasic" class="form-label">Deskripsi transaksi</label>
-                                <input type="text" id="nameBasic" class="form-control"
-                                    placeholder="Tuliskan deskripsi jika perlu" required />
-                            </div>
-                            <div class="mb-3 col-12">
-                                <label for="nameBasic" class="form-label">Pilih Status</label> <br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1" checked />
-                                    <label class="form-check-label text-secondary" for="inlineRadio1">Draft
-                                        <small class="text-secondary">(<i>Tagihan transaksi ini tidak ditampilkan pada
-                                                siswa</i>)</small></label>
-                                </div>
-                                <br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2" />
-                                    <label class="form-check-label text-info" for="inlineRadio2">Proses
-                                        <small class="text-secondary">(<i>Tagihan transaksi ini ditampilkan pada
-                                                siswa</i>)</small></label>
-                                </div>
-                                <br>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="py-4">
-                                    <div class="row">
-                                        <div class="col-12 col-md-9">
-                                            <h6 class="mt-2 text-primary">Siapa yang melakukan pembayaran transaksi ini?
-                                            </h6>
-                                        </div>
-                                        <div class=" col-12 col-md-3 text-md-end">
-                                            <a class="btn btn-outline-primary collapsed" data-bs-toggle="collapse"
-                                                href="#subjek-transaksi-siswa" role="button" aria-expanded="false"
-                                                aria-controls="subjek-transaksi-siswa"> <span
-                                                    class="badge badge-center rounded-pill bg-label-primary"><i
-                                                        class='bx bxs-user pt-1'></i></span> &nbsp;
-                                                Pilih
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="collapse" id="subjek-transaksi-siswa">
-                                    <div class="mb-3">
-                                        <label for="kelasSelect" class="form-label">berdasarkan kelas</label>
-                                        <input id="kelasSelect" name="kelasSelect" class="form-control"
-                                            placeholder="Pilih kelas">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                            Batal
-                        </button>
-                        <button type="button" class="btn btn-primary" onclick="sweet()"
-                            data-bs-dismiss="modal">Simpan</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Modal Bayar Transaksi-->
         <div class="modal fade" id="bayar-transaksi-siswa" tabindex="-1" data-bs-backdrop="static">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Pembayaran Transaksi Siswa</h5>
+                        <h5 class="modal-title">Pembayaran Transaksi Pegawai</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12 col-md-6 mb-3">
                                 <div class="d-flex">
-                                    <img src="../assets/img/avatars/1.png" alt=""
+                                    <img src="../assets/img/avatars/muslimah-1.png" alt=""
                                         class="w-px-40 h-px-40 rounded-circle">
                                     &emsp;
                                     <div>
-                                        <h5 class="mb-0 fw-bold">Agus Fakhriz</h5>
-                                        <span class="small">NIS : 712381239</span>
+                                        <h5 class="mb-0 fw-bold">Nur Miftah</h5>
+                                        <span class="small">NIP : 712381239</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
                                 <div class="d-flex">
-                                    <img src="../assets/img/icons/unicons/wallet-info.png" alt=""
-                                        class="w-px-40 h-px-40 rounded-circle">
+                                    <span class="btn btn-icon rounded-pill bg-label-info">
+                                        <i class="bx bxs-graduation bx-sm bx-tada-hover"></i>
+                                    </span>
                                     &emsp;
                                     <div>
-                                        <h5 class="mb-0 fw-bold text-success">+ 1.200.000</h5>
-                                        <span class="small">Saldo uang tersimpan</span>
+
+                                        <span class="small">Jabatan</span> <br> <span
+                                            class="badge bg-label-primary me-1 mb-2" data-bs-toggle="tooltip"
+                                            data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title=""
+                                            data-bs-original-title="Jabatan pegawai ini">Guru</span> <span
+                                            class="badge bg-label-primary me-1 mb-2" data-bs-toggle="tooltip"
+                                            data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title=""
+                                            data-bs-original-title="Jabatan pegawai ini">Wali Kelas</span> <span
+                                            class="badge bg-label-primary me-1 mb-2" data-bs-toggle="tooltip"
+                                            data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title=""
+                                            data-bs-original-title="Jabatan pegawai ini">Bendahara</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="py-4">
-                                    <div class="row">
-                                        <div class="col-12 col-md-8">
-                                            <span class="mt-2 fw-normal">Ingin membayar menggunakan saldo uang
-                                                tersimpan?
-                                            </span>
-                                        </div>
-                                        <div class=" col-12 col-md-4 text-end">
-                                            <a class="btn btn-outline-primary collapsed" data-bs-toggle="collapse"
-                                                href="#saldo-uang-siswa" role="button" aria-expanded="false"
-                                                aria-controls="saldo-uang-siswa"> <span
-                                                    class="badge badge-center rounded-pill bg-label-primary"><i
-                                                        class='bx bxs-wallet'></i></span> &nbsp;
-                                                Gunakan
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="saldo-uang-siswa" style="">
+                                <div class="collapse" id="saldo-uang-siswa">
                                     <div class="mb-3">
                                         <div class="input-group input-group-merge">
                                             <span class="input-group-text" id="saldoTabunganTRansaksiInput">Rp</span>
@@ -614,186 +613,85 @@
                                     <table class="table table-flush-spacing">
                                         <tbody>
                                             <tr>
-                                                <td class="fw-semibold" colspan="2">
+                                                <td class="fw-normal">
                                                     <div class="form-check">
                                                         <label class="form-check-label" for="selectAll">
-                                                            Pilih semua tagihan <i
-                                                                class="bx bx-info-circle text-primary"
-                                                                data-bs-toggle="tooltip" data-bs-placement="top"
-                                                                aria-label="Centang pada semua pembayaran"
-                                                                data-bs-original-title="Centang pada semua tagihan pembayaran"></i>
+                                                            Gaji Pokok
                                                         </label>
-                                                        <input class="form-check-input" type="checkbox" id="selectAll">
+                                                        <input class="form-check-input" type="checkbox" checked
+                                                            disabled>
                                                     </div>
+                                                </td>
+                                                <td class="text-end">
+                                                    <span>1.125.000</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="fw-normal">
                                                     <div class="form-check">
                                                         <label class="form-check-label" for="selectAll">
-                                                            SPP Bulanan (Januari 2023)
+                                                            Tunjangan Wali Kelas
                                                         </label>
-                                                        <input class="form-check-input" type="checkbox" checked>
+                                                        <input class="form-check-input" type="checkbox" checked
+                                                            disabled>
                                                     </div>
                                                 </td>
                                                 <td class="text-end">
-                                                    <span class="text-danger">-125.000</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="fw-normal">
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="buku-paket">
-                                                            Buku Paket / LKS Semester Ganjil
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" id="buku-paket"
-                                                            checked>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <span class="text-danger">-200.000</span>
+                                                    <span>125.000</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="fw-normal">
                                                     <div class="form-check">
                                                         <label class="form-check-label" for="selectAll">
-                                                            Seragam Sekolah (Laki - laki)
+                                                            Tunjangan Bendahara
                                                         </label>
-                                                        <input class="form-check-input" type="checkbox">
+                                                        <input class="form-check-input" type="checkbox" checked
+                                                            disabled>
                                                     </div>
                                                 </td>
                                                 <td class="text-end">
-                                                    <span class="text-danger">-200.000</span>
+                                                    <span>1.000.000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-normal">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label" for="selectAll">
+                                                            Tunjangan komunikasi
+                                                        </label>
+                                                        <input class="form-check-input" type="checkbox" checked
+                                                            disabled>
+                                                    </div>
+                                                </td>
+                                                <td class="text-end">
+                                                    <span>25.000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-normal">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label" for="selectAll">
+                                                            Arisan wajib bulanan
+                                                        </label>
+                                                        <input class="form-check-input" type="checkbox" checked
+                                                            disabled>
+                                                    </div>
+                                                </td>
+                                                <td class="text-end">
+                                                    <span>- 25.000</span>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
 
-                                <div class="pb-3">
-                                    <a class="mt-2 text-primary collapsed" data-bs-toggle="collapse"
-                                        href="#transaksiLain" role="button" aria-expanded="false"
-                                        aria-controls="transaksiLain">Lihat tagihan lain?
-                                    </a>
-                                </div>
-                                <div class="collapse" id="transaksiLain" style="">
-                                    <div class="table-responsive">
-                                        <table class="table table-flush-spacing">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="fw-semibold">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="selectAll">
-                                                                Pilih semua transaksi lain <i
-                                                                    class="bx bx-info-circle text-primary"
-                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
-                                                                    aria-label="Centang pada semua pembayaran lain"
-                                                                    data-bs-original-title="Centang pada semua pembayaran lain"></i>
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="selectAll">
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-end">
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-normal">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="spp-februari">
-                                                                SPP Bulanan (Februari 2023)
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="spp-februari" checked>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <span class="text-danger">-125.000</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-normal">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="spp-maret">
-                                                                SPP Bulanan (Maret 2023)
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" checked
-                                                                id="spp-maret">
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <span class="text-danger">-125.000</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-normal">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="spp-april">
-                                                                SPP Bulanan (April 2023)
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" checked
-                                                                id="spp-april">
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <span class="text-danger">-125.000</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-normal">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="soo-mei">
-                                                                SPP Bulanan (Mei 2023)
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" checked
-                                                                id="spp-mei">
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <span class="text-danger">-125.000</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-normal">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="spp-juni">
-                                                                SPP Bulanan (Juni 2023)
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" checked
-                                                                id="spp-juni">
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <span class="text-danger">-125.000</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-normal">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="spp-juli">
-                                                                SPP Bulanan (Juli 2023)
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="spp-juli">
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <span class="text-danger">-125.000</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-
                                 <div class="bg-label-warning d-flex justify-content-between p-3">
                                     <p class="text-black mb-0"> <span
-                                            class="badge badge-center rounded-pill bg-danger">7</span>&nbsp;
+                                            class="badge badge-center rounded-pill bg-danger">5</span>&nbsp;
                                         Total
                                         pembayaran</p>
-                                    <span class="text-danger fw-bold">-1.150.000</span>
+                                    <span class="fw-bold text-black">2.250.000</span>
                                 </div>
                             </div>
                         </div>
@@ -846,11 +744,10 @@
             $(".select2").select2();
         </script>
         <script>
-            $("#namaKelasSelect").select2({
-                placeholder: "Pilih kelas",
+            $("#jabatanSelect").select2({
+                placeholder: "Pilih jabatan",
                 allowClear: true
             });
-
             $("#statusSelect").select2({
                 placeholder: "Pilih status",
                 allowClear: true

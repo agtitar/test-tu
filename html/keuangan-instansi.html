@@ -99,7 +99,7 @@
                             <div> Transaksi Instansi</div>
                         </a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item active">
                         <a href="keuangan.html" class="menu-link">
                             <i class="menu-icon tf-icons bx bxs-bar-chart-alt-2"></i>
                             <div>Keuangan</div>
@@ -122,13 +122,13 @@
                             <div>Periode Waktu</div>
                         </a>
                     </li>
-                    <li class="menu-item open active">
+                    <li class="menu-item open">
                         <a href="javascript:void(0)" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-male-female"></i>
                             <div>Pengguna</div>
                         </a>
                         <ul class="menu-sub">
-                            <li class="menu-item  active">
+                            <li class="menu-item">
                                 <a href="pengguna-siswa.html" class="menu-link">
                                     <div>Siswa</div>
                                 </a>
@@ -287,19 +287,24 @@
 
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <div class="row">
-                            <div class="col-12 mb-2 order-0">
-                                <div class="alert alert-info text-dark alert-dismissible" role="alert">Berikut adalah
-                                    data semua siswa
-                                    yang dapat Anda lihat berdasarkan informasi yang tersedia <button type="button"
-                                        class="btn-close ml-auto" data-bs-dismiss="alert" aria-label="Close"></button>
-                                </div>
+                            <div class="col-12">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="keuangan.html">Keuangan</a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <span href="javascript:void(0);">Instansi</span>
+                                        </li>
+                                    </ol>
+                                </nav>
                             </div>
-                            <div class="col-lg-12 mb-4 order-0">
+                            <div class="col-lg-12 mb-4">
                                 <!-- Hoverable Table rows -->
                                 <div class="card">
                                     <div class="row">
                                         <div class="col-md-5 col-12">
-                                            <h5 class="card-header pt-4">Daftar Siswa</h5>
+                                            <h5 class="card-header pt-4">Daftar Transaksi</h5>
                                         </div>
                                         <div class="col-md-7 col-12">
                                             <div class="row py-4 px-3">
@@ -308,7 +313,7 @@
                                                         <span class="input-group-text"><i
                                                                 class="tf-icons bx bx-search"></i></span>
                                                         <input type="text" class="form-control"
-                                                            placeholder="Cari nama siswa...">
+                                                            placeholder="Cari ID transaksi">
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 pb-3">
@@ -343,7 +348,7 @@
                                             <thead>
                                                 <tr>
                                                     <th class="text-primary" style="min-width: 200px;">Nama Siswa</th>
-                                                    <th class="text-primary">ID Pengguna</th>
+                                                    <th class="text-primary">Jenis Kelamin</th>
                                                     <th class="text-primary">Info Pendidikan</th>
                                                     <th class="text-primary">Status Siswa</th>
                                                     <th class="text-primary">Aksi</th>
@@ -353,14 +358,17 @@
                                                 <tr>
                                                     <td>
                                                         <div class="avatar">
-                                                            <img src="../assets/img/avatars/siswa-1.jpg" alt
-                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
-                                                            <strong>Agus Nur Hida</strong>
+                                                            <div class="avatar flex-shrink-0 me-3">
+                                                                <span class="avatar-initial rounded bg-label-primary"><i
+                                                                        class="bx bx-wallet bx-sm"></i></span>
+
+                                                                <strong>Agus Nur Hidayah</strong>
+                                                            </div>
                                                         </div>
                                                     </td>
-                                                    <td>2019827318920</td>
+                                                    <td>Laki- Laki</td>
                                                     <td>
-                                                        <b>SMP</b> (Kelas tidak tersedia)
+                                                        <b>MI</b> Kelas VI-B
                                                     </td>
                                                     <td><span class="badge bg-label-success me-1">Aktif</span></td>
                                                     <td>
@@ -387,14 +395,14 @@
                                                 <tr>
                                                     <td>
                                                         <div class="avatar">
-                                                            <img src="../assets/img/avatars/siswi-1.jpg" alt
+                                                            <img src="../assets/img/avatars/1.png" alt
                                                                 class="w-px-40 h-auto rounded-circle" /> &nbsp;
-                                                            <strong>Fatim Nur</strong>
+                                                            <strong>Agus Nur Hidayah</strong>
                                                         </div>
                                                     </td>
-                                                    <td>2019827318923</td>
+                                                    <td>Laki- Laki</td>
                                                     <td>
-                                                        <b>SMP</b> Kelas II - B
+                                                        <b>MI</b> Kelas VI-B
                                                     </td>
                                                     <td><span class="badge bg-label-success me-1">Aktif</span></td>
                                                     <td>
@@ -416,53 +424,147 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="avatar">
-                                                            <img src="../assets/img/avatars/siswa-2.jpg" alt
-                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
-                                                            <strong>Khoirul Huda</strong>
-                                                        </div>
-                                                    </td>
-                                                    <td>2019827318924</td>
-                                                    <td>
-                                                        <b>SMP</b> Kelas II - B
-                                                    </td>
-                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <button type="button"
-                                                                class="btn p-0 dropdown-toggle hide-arrow"
-                                                                data-bs-toggle="dropdown">
-                                                                <i class="bx bx-dots-vertical-rounded"></i>
-                                                            </button>
-                                                            <div class="dropdown-menu">
-                                                                <a class="dropdown-item" href="javascript:void(0);"><i
-                                                                        class="bx bx-user me-1"></i>
-                                                                    Lihat Detail</a>
-                                                                <a class="dropdown-item" href="javascript:void(0);"><i
-                                                                        class="bx bx-pencil me-1"></i>
-                                                                    Ubah
-                                                                    Data</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
                                                 <tr>
                                                     <td>
                                                         <div class="avatar">
                                                             <img src="../assets/img/avatars/1.png" alt
                                                                 class="w-px-40 h-auto rounded-circle" /> &nbsp;
-                                                            <strong>Faeshal Makrub</strong>
+                                                            <strong>Agus Nur Hidayah</strong>
                                                         </div>
                                                     </td>
-                                                    <td>2019827318931</td>
+                                                    <td>Laki- Laki</td>
                                                     <td>
-                                                        <b>SMP</b> Kelas III - A
+                                                        <b>MI</b> Kelas VI-B
                                                     </td>
-                                                    <td><span class="badge bg-label-danger me-1">Tidak Aktif</span>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button type="button"
+                                                                class="btn p-0 dropdown-toggle hide-arrow"
+                                                                data-bs-toggle="dropdown">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-user me-1"></i>
+                                                                    Lihat Detail</a>
+                                                                <a class="dropdown-item" href="javascript:void(0);"><i
+                                                                        class="bx bx-pencil me-1"></i>
+                                                                    Ubah
+                                                                    Data</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/avatars/1.png" alt
+                                                                class="w-px-40 h-auto rounded-circle" /> &nbsp;
+                                                            <strong>Agus Nur Hidayah</strong>
+                                                        </div>
+                                                    </td>
+                                                    <td>Laki- Laki</td>
+                                                    <td>
+                                                        <b>MI</b> Kelas VI-B
+                                                    </td>
+                                                    <td><span class="badge bg-label-success me-1">Aktif</span></td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <button type="button"

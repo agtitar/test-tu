@@ -71,13 +71,13 @@
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Menu utama</span>
                     </li>
-                    <li class="menu-item active">
+                    <li class="menu-item">
                         <a href="transaksi-siswa.html" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
                             <div>Transaksi Siswa</div>
                         </a>
                     </li>
-                    <li class="menu-item ">
+                    <li class="menu-item  active">
                         <a href="transaksi-pegawai.html" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
                             <div> Transaksi Pegawai</div>
@@ -288,19 +288,14 @@
                                                             Utama</span>
                                                         <h4 class="card-title text-primary">
                                                             <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
-                                                            Transaksi Siswa
+                                                            Transaksi Pegawai
                                                         </h4>
                                                         <p class="mb-4">
-                                                            Berisikan semua transaksi yang diterapkan pada siswa pada
+                                                            Berisikan semua transaksi yang diterapkan pada pegawai pada
                                                             instansi
                                                             Anda
                                                         </p>
 
-                                                        <div class="col-12 col-md-4 my-2">
-
-                                                            <input type="text" id="saldoTabunganTRansaksiInput"
-                                                                class="form-control" disabled value="TA 2019 / 2020">
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4 text-center text-sm-left">
@@ -319,23 +314,19 @@
                                             <div class="card-header pt-4">
 
                                                 <div class="row">
-
                                                     <div class="col-12 col-md-4 my-2">
-                                                        <select id="namaKelasSelect" class="form-select">
-                                                            <option disabled="" selected="" value="">Pilih Kelas
+                                                        <select id="jabatanSelect" class="form-select">
+                                                            <option disabled="" selected="" value="">Pilih jabatan
                                                             </option>
-                                                            <option value="1">Kelas I - A </option>
-                                                            <option value="2">Kelas I - B</option>
-                                                            <option value="3">Kelas I - C</option>
-                                                            <option value="4">Kelas II - A </option>
-                                                            <option value="5">Kelas II - B</option>
-                                                            <option value="6">Kelas II - C</option>
-                                                            <option value="7">Kelas III - A </option>
-                                                            <option value="8">Kelas III - B</option>
-                                                            <option value="9">Kelas III - C</option>
-                                                            <option value="10">Semua kelas</option>
+                                                            <option value="1">Kepala Sekolah </option>
+                                                            <option value="2">Sekretaris</option>
+                                                            <option value="3">Bendahara</option>
+                                                            <option value="4">Wali Kelas </option>
+                                                            <option value="5">Guru</option>
+                                                            <option value="6">Semua jabatan</option>
                                                         </select>
                                                     </div>
+
                                                     <div class="col-12 col-md-4 my-2">
                                                         <select id="statusSelect" class="form-select">
                                                             <option disabled="" selected="" value="">Pilih status
@@ -347,9 +338,10 @@
                                                     </div>
 
                                                     <div class="col-12 col-md-4 align-items-center d-flex my-2"> <input
-                                                            type="search" class="form-control" placeholder="Cari siswa">
+                                                            type="search" class="form-control"
+                                                            placeholder="Cari pegawai">
                                                         &emsp;
-                                                        <a href="transaksi-siswa-search.html" type="button"
+                                                        <a href="transaksi-pegawai-search.html" type="button"
                                                             class="btn btn-icon btn-primary">
                                                             <span class='bx bx-search-alt h4 pt-3 text-white'></span>
                                                         </a>
@@ -378,17 +370,16 @@
                                                     data-bs-toggle="collapse" data-bs-target="#accordionIcon-1"
                                                     aria-controls="accordionIcon-1" aria-expanded="false"><i
                                                         class='bx bx-info-circle text-info'>&nbsp;</i>
-                                                    Melakukan transaksi siswa
+                                                    Melakukan transaksi pegawai
                                                 </button>
                                             </h2>
 
                                             <div id="accordionIcon-1" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionIcon">
                                                 <div class="accordion-body">
-                                                    Pastika, Anda telah memilih filter data yang sesuai berdasarkan
-                                                    Tahun
-                                                    Ajaran, Nama Kelas, dan
-                                                    masukkan nama siswa. Kemudian tekan tombol
+                                                    Pastikan Anda telah memilih filter data yang sesuai berdasarkan
+                                                    Jabatan dan
+                                                    masukkan nama pegawai, kemudian tekan tombol
                                                     <span class="bx bx-search-alt text-primary h5 mb-0"></span>
                                                 </div>
                                             </div>
@@ -412,13 +403,13 @@
                                                         data-bs-html="true" title=""
                                                         data-bs-original-title="Terdapat tagihan pembayaran">Belum
                                                         Lunas</span>
-                                                    berarti siswa yang bersangkutan memiliki tagihan pembayaran yang
+                                                    berarti pegawai yang bersangkutan memiliki tagihan pembayaran yang
                                                     perlu dibayarankan pada bulan ini. <br><br>
                                                     <span class="badge bg-label-success me-1" data-bs-toggle="tooltip"
                                                         data-bs-offset="0,4" data-bs-placement="right"
                                                         data-bs-html="true" title=""
                                                         data-bs-original-title="Ditampilkan">Lunas</span>
-                                                    berarti siswa yang bersangkutan tidak memiliki tagihan pembayaran
+                                                    berarti pegawai yang bersangkutan tidak memiliki tagihan pembayaran
                                                     yang
                                                     perlu dibayarankan pada bulan ini.
                                                 </div>
@@ -846,11 +837,10 @@
             $(".select2").select2();
         </script>
         <script>
-            $("#namaKelasSelect").select2({
-                placeholder: "Pilih kelas",
+            $("#jabatanSelect").select2({
+                placeholder: "Pilih jabatan",
                 allowClear: true
             });
-
             $("#statusSelect").select2({
                 placeholder: "Pilih status",
                 allowClear: true

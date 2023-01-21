@@ -16,8 +16,7 @@
   // --------------------------------------------------------------------
   const totalRevenueChartEl = document.querySelector('#totalRevenueChart'),
     totalRevenueChartOptions = {
-      series: [
-        {
+      series: [{
           name: 'Pemasukan',
           data: [18000000, 7000000, 15000000, 29000000, 18000000, 12000000, 9000000, 10000000, 12000000, 13000000, 15000000, 18000000]
         },
@@ -30,7 +29,9 @@
         height: 300,
         stacked: true,
         type: 'bar',
-        toolbar: { show: false }
+        toolbar: {
+          show: false
+        }
       },
       plotOptions: {
         bar: {
@@ -78,7 +79,9 @@
         }
       },
       xaxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des'],
+        categories: ['Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des',
+          'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'
+        ],
         labels: {
           style: {
             fontSize: '13px',
@@ -100,8 +103,7 @@
           }
         }
       },
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 1700,
           options: {
             plotOptions: {
@@ -392,11 +394,9 @@
         width: 5,
         curve: 'smooth'
       },
-      series: [
-        {
-          data: [110, 270, 145, 245, 205, 285]
-        }
-      ],
+      series: [{
+        data: [110, 270, 145, 245, 205, 285]
+      }],
       xaxis: {
         show: false,
         lines: {
@@ -492,11 +492,9 @@
   // --------------------------------------------------------------------
   const incomeChartEl = document.querySelector('#incomeChart'),
     incomeChartConfig = {
-      series: [
-        {
-          data: [24, 21, 30, 22, 42, 26, 35, 29]
-        }
-      ],
+      series: [{
+        data: [24, 21, 30, 22, 42, 26, 35, 29]
+      }],
       chart: {
         height: 215,
         parentHeightOffset: 0,
@@ -521,17 +519,15 @@
         colors: 'transparent',
         strokeColors: 'transparent',
         strokeWidth: 4,
-        discrete: [
-          {
-            fillColor: config.colors.white,
-            seriesIndex: 0,
-            dataPointIndex: 7,
-            strokeColor: config.colors.primary,
-            strokeWidth: 2,
-            size: 6,
-            radius: 8
-          }
-        ],
+        discrete: [{
+          fillColor: config.colors.white,
+          seriesIndex: 0,
+          dataPointIndex: 7,
+          strokeColor: config.colors.primary,
+          strokeWidth: 2,
+          size: 6,
+          radius: 8
+        }],
         hover: {
           size: 7
         }
