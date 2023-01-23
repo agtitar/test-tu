@@ -130,7 +130,7 @@
             <ul class="menu-sub">
               <li class="menu-item">
                 <a href="kelas.html" class="menu-link">
-                  <div>Data Kelas</div>
+                  <div>Kelas Formal</div>
                 </a>
               </li>
               <li class="menu-item">
@@ -205,8 +205,15 @@
             <ul class="navbar-nav flex-row align-items-center ms-auto">
 
               <li class="nav-item lh-1 me-3">
-                <span class="github-button" href="#" data-icon="octicon-star" data-size="large">Faishal
-                  Salim</span>
+                <button id="btnGroupDrop1" type="button" data-bs-toggle="dropdown"
+                  class="btn btn-sm rounded-pill btn-outline-primary fw-semibold mb-t mr-2 dropdown-toggle hide-arrow"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="tf-icons bx bx-user"></span>&nbsp; Admin Instansi </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item active" selected href="javascript:void(0);">Admin Instansi</a>
+                  <a class="dropdown-item" href="javascript:void(0);">Pegawai / Guru</a>
+                  <a class="dropdown-item" href="index-siswa.html">Siswa / Wali Siswa</a>
+                </div>
               </li>
 
               <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -282,7 +289,7 @@
                               <span class="tf-icons bx bx-map"></span>&nbsp; SMP Al-Bahjah
                             </button> &nbsp;
                             <button id="btnGroupDrop1" type="button" data-bs-toggle="dropdown"
-                              class="btn btn-sm rounded-pill btn-outline-primary fw-semibold mb-2 mr-2 dropdown-toggle"
+                              class="btn btn-sm rounded-pill btn-outline-primary fw-semibold mb-2 mr-2 dropdown-toggle hide-arrow"
                               aria-haspopup="true" aria-expanded="false">
                               <span class="tf-icons bx bx-user"></span>&nbsp; Admin Instansi </button>
                             <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -314,11 +321,9 @@
                             </div>
                             <span class="fw-semibold d-block mb-1">Transaksi</span>
                             <h4 class="card-title mb-3 fw-normal">Siswa</h4>
-                            <div class="d-grid gap-2">
-                              <a href="transaksi-siswa.html" type="button"
-                                class="btn btn-block rounded-pill btn-primary">Selengkapnya
-                              </a>
-                            </div>
+                            <a href="transaksi-siswa.html" type="button"
+                              class="btn btn-block rounded-pill btn-primary">Selengkapnya
+                            </a>
 
                           </div>
                         </div>
@@ -333,11 +338,9 @@
                             </div>
                             <span class="fw-semibold d-block mb-1">Transaksi</span>
                             <h4 class="card-title mb-3 fw-normal">Pegawai</h4>
-                            <div class="d-grid gap-2">
-                              <a href="transaksi-pegawai.html" type="button"
-                                class="btn btn-block rounded-pill btn-primary">Selengkapnya
-                              </a>
-                            </div>
+                            <a href="transaksi-pegawai.html" type="button"
+                              class="btn btn-block rounded-pill btn-primary">Selengkapnya
+                            </a>
 
                           </div>
                         </div>
@@ -353,11 +356,9 @@
                             </div>
                             <span class="fw-semibold d-block mb-1">Transaksi</span>
                             <h4 class="card-title mb-3 fw-normal">Instansi</h4>
-                            <div class="d-grid gap-2">
-                              <a href="transaksi-instansi.html" type="button"
-                                class="btn btn-block rounded-pill btn-primary">Selengkapnya
-                              </a>
-                            </div>
+                            <a href="transaksi-instansi.html" type="button"
+                              class="btn btn-block rounded-pill btn-primary">Selengkapnya
+                            </a>
 
                           </div>
                         </div>
@@ -373,11 +374,9 @@
                             </div>
                             <span class="fw-semibold d-block mb-1">Informasi</span>
                             <h4 class="card-title mb-3 fw-normal">Keuangan</h4>
-                            <div class="d-grid gap-2">
-                              <a href="keuangan.html" type="button"
-                                class="btn btn-block rounded-pill btn-primary">Selengkapnya
-                              </a>
-                            </div>
+                            <a href="keuangan.html" type="button"
+                              class="btn btn-block rounded-pill btn-primary">Selengkapnya
+                            </a>
 
                           </div>
                         </div>
@@ -400,25 +399,41 @@
                       <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconOne">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                           data-bs-target="#accordionIcon-1" aria-controls="accordionIcon-1" aria-expanded="false">
-                          Manajemen Data
+                          Pengaturan Umum
                         </button>
                       </h2>
 
                       <div id="accordionIcon-1" class="accordion-collapse collapse" data-bs-parent="#accordionIcon">
                         <div class="accordion-body">
-                          Anda diharuskan untuk melakukan manajemen data : <br>
+                          Berikut adalah pengelolaan dan manajemen utama yang perlu dilakukan : <br>
                           <ul>
                             <li>
                               <span class="text-primary"><a href="instansi.html">Instansi</a> </span> : melengkapi
-                              informasi profil
-                              instansi,
+                              informasi
+                              instansi seputar nama, jenjang, alamat, kontak, dan informasi lainnya.
                             </li>
                             <li>
-                              <span class="text-primary"><a href="instansi.html">Instansi</a> </span> : melengkapi
-                              informasi profil
-                              instansi,
+                              <span class="text-primary"><a href="periode-waktu.html">Periode Waktu</a> </span> :
+                              menambahkan informasi periode waktu berupa tahun ajaran.
                             </li>
-
+                            <li>
+                              <span class="text-primary">Pengguna </span> :
+                              melakukan manajemen pengguna (<a href="pengguna-siswa.html" class="text-primary">siswa</a>
+                              dan <a class="text-primary" href="pengguna-pegawai.html">pegawai</a>).
+                            </li>
+                            <li>
+                              <span class="text-primary">Kelas</span> :
+                              melakukan manajemen informasi terkait kelas (<a href="kelas.html"
+                                class="text-primary">Kelas Formal</a> dan <a class="text-primary"
+                                href="penempatan-kelas.html">Penempatan siswa</a>).
+                            </li>
+                            <li>
+                              <span class="text-primary">Transaksi</span> :
+                              melakukan manajemen terkait pengaturan dan kelola transaksi (<a
+                                href="pengaturan-transaksi-siswa.html" class="text-primary">Siswa</a>, <a
+                                class="text-primary" href="pengaturan-transaksi-pegawai.html">Pegawai</a>, dan <a
+                                class="text-primary" href="pengaturan-transaksi-instansi.html">Instansi</a>).
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -428,12 +443,13 @@
                       <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconTwo">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                           data-bs-target="#accordionIcon-2" aria-controls="accordionIcon-2" aria-expanded="false">
-                          Pembayaran siswa
+                          Pembayaran Siswa
                         </button>
                       </h2>
                       <div id="accordionIcon-2" class="accordion-collapse collapse" data-bs-parent="#accordionIcon">
                         <div class="accordion-body">
-                          Anda diharuskan untuk mengakomodir seluruh pembayaran yang dilakukan oleh siswa
+                          Anda diharuskan untuk mengakomodir seluruh pembayaran yang dilakukan oleh siswa melaluu menu
+                          <a href="transaksi-siswa.html">Transaksi Siswa</a>
                         </div>
                       </div>
                     </div>
@@ -442,18 +458,47 @@
                       <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconThree">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                           data-bs-target="#accordionIcon-3" aria-expanded="false" aria-controls="accordionIcon-3">
-                          Informasi Lain
+                          Pembayaran Pegawai
                         </button>
                       </h2>
-                      <div id="accordionIcon-3" class="accordion-collapse collapse" data-bs-parent="#accordionIcon"
-                        style="">
+                      <div id="accordionIcon-3" class="accordion-collapse collapse" data-bs-parent="#accordionIcon">
                         <div class="accordion-body">
-                          Oat cake toffee chocolate bar jujubes. Marshmallow brownie lemon drops cheesecake. Bonbon
-                          gingerbread marshmallow sweet jelly beans muffin. Sweet roll bear claw candy canes oat cake
-                          dragée caramels. Ice cream wafer danish cookie caramels muffin.
+                          Anda diharuskan untuk mengakomodir seluruh pembayaran terkait pegawai melaluu menu
+                          <a href="transaksi-pegawai.html">Transaksi Pegawai</a>
                         </div>
                       </div>
                     </div>
+
+                    <div class="accordion-item my-4 ">
+                      <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconFour">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                          data-bs-target="#accordionIcon-4" aria-expanded="false" aria-controls="accordionIcon-4">
+                          Pembayaran Instansi
+                        </button>
+                      </h2>
+                      <div id="accordionIcon-4" class="accordion-collapse collapse" data-bs-parent="#accordionIcon">
+                        <div class="accordion-body">
+                          Anda diharuskan untuk mengakomodir seluruh pembiayaan terkait instansi melaluu menu
+                          <a href="transaksi-instansi.html">Transaksi Instansi</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item my-4 ">
+                      <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconFive">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                          data-bs-target="#accordionIcon-5" aria-expanded="false" aria-controls="accordionIcon-5">
+                          Keuangan
+                        </button>
+                      </h2>
+                      <div id="accordionIcon-5" class="accordion-collapse collapse" data-bs-parent="#accordionIcon">
+                        <div class="accordion-body">
+                          Anda dapat melihat data analitik dari transaksi dari siswa, pegawai, dan instansi melalui menu
+                          <a href="keuangan.html">Keuangan</a>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
