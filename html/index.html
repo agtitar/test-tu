@@ -201,25 +201,44 @@
               </div>
             </div>
 
-
             <ul class="navbar-nav flex-row align-items-center ms-auto">
 
-              <li class="nav-item lh-1 me-3">
-                <button id="btnGroupDrop1" type="button" data-bs-toggle="dropdown"
-                  class="btn btn-sm rounded-pill btn-outline-primary fw-semibold mb-t mr-2 dropdown-toggle hide-arrow"
-                  aria-haspopup="true" aria-expanded="false">
-                  <span class="tf-icons bx bx-user"></span>&nbsp; Admin Instansi </button>
-                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                  <a class="dropdown-item active" selected href="javascript:void(0);">Admin Instansi</a>
-                  <a class="dropdown-item" href="javascript:void(0);">Pegawai / Guru</a>
-                  <a class="dropdown-item" href="index-siswa.html">Siswa / Wali Siswa</a>
-                </div>
+              <li class="nav-item me-2 navbar-dropdown dropdown-user dropdown"><a
+                  class="fw-semibold bg-label-warning small rounded-pill p-2 nav-link dropdown-toggle hide-arrow"
+                  href="#" data-bs-toggle="dropdown">SMP
+                  <span class="bx bx-user text-white bg-warning rounded-pill p-1"></span></a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><span class="dropdown-item-text small text-muted">Peran Anda</span></li>
+                  <li>
+                    <a class="dropdown-item" selected href="#">
+                      <span class="bx bx-user text-white bg-danger rounded-pill p-1 mt-1 me-2"></span></i>
+                      <span class="align-middle pb-2">Admin Instansi</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" selected href="#">
+                      <span class="bx bx-user text-white bg-warning rounded-pill p-1 mt-1 me-2"></span></i>
+                      <span class="align-middle pb-2">Admin TU</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="bx bx-user text-white bg-info rounded-pill p-1 mt-1 me-2"></span></i>
+                      <span class="align-middle pb-2">Guru</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="bx bx-user text-white bg-primary rounded-pill p-1 mt-1 me-2"></span></i>
+                      <span class="align-middle pb-2">Siswa</span>
+                    </a>
+                  </li>
+                </ul>
               </li>
-
               <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                   <div class="avatar avatar-online">
-                    <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    <img src="../assets/img/avatars/muslim-3.jpg" alt class="w-px-40 h-auto rounded-circle" />
                   </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -228,12 +247,12 @@
                       <div class="d-flex">
                         <div class="flex-shrink-0 me-3">
                           <div class="avatar avatar-online">
-                            <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            <img src="../assets/img/avatars/muslim-3.jpg" alt class="w-px-40 h-auto rounded-circle" />
                           </div>
                         </div>
                         <div class="flex-grow-1">
                           <span class="fw-semibold d-block">Faishal Salim</span>
-                          <small class="text-muted">Admin Instansi</small>
+                          <small class="text-muted">1020193124</small>
                         </div>
                       </div>
                     </a>
@@ -242,9 +261,9 @@
                     <div class="dropdown-divider"></div>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="profilku.html">
                       <i class="bx bx-user me-2"></i>
-                      <span class="align-middle">Profilku</span>
+                      <span class="align-middle pb-2">Profilku</span>
                     </a>
                   </li>
 
@@ -254,7 +273,7 @@
                   <li>
                     <a class="dropdown-item" href="masuk.html">
                       <i class="bx bx-power-off me-2"></i>
-                      <span class="align-middle">Keluar Apps</span>
+                      <span class="align-middle pb-2">Keluar Apps</span>
                     </a>
                   </li>
                 </ul>
@@ -267,139 +286,71 @@
         <div class="content-wrapper">
 
           <div class="container-xxl flex-grow-1 container-p-y">
-            <div class="row">
-              <div class="col-lg-8 mb-4 order-0">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="card h-100">
-                      <div class="d-flex align-items-end row">
-                        <div class="col-sm-8">
-                          <div class="card-body">
-                            <h5 class="card-title text-primary">Selamat Datang <span class="fw-bold">Faishal
-                                Salim</span> !
-                            </h5>
-                            <p class="mb-4">
-                              Awali pekerjaan dengan <span class="fw-bold">bismillah dan alhamdulillah,</span><br>
-                              semoga
-                              hari
-                              ini menyenangkan dan tanpa hambatan :)
-                            </p>
-                            </button> <button type="button"
-                              class="btn btn-sm rounded-pill btn-outline-primary fw-semibold mb-2 mr-2" disabled>
-                              <span class="tf-icons bx bx-map"></span>&nbsp; SMP Al-Bahjah
-                            </button> &nbsp;
-                            <button id="btnGroupDrop1" type="button" data-bs-toggle="dropdown"
-                              class="btn btn-sm rounded-pill btn-outline-primary fw-semibold mb-2 mr-2 dropdown-toggle hide-arrow"
-                              aria-haspopup="true" aria-expanded="false">
-                              <span class="tf-icons bx bx-user"></span>&nbsp; Admin Instansi </button>
-                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                              <a class="dropdown-item active" selected href="javascript:void(0);">Admin Instansi</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Pegawai / Guru</a>
-                              <a class="dropdown-item" href="index-siswa.html">Siswa / Wali Siswa</a>
-                            </div>
-                          </div>
+            <div class="row mb-4">
+              <div class="col-12 col-md-12">
+                <div class="card h-100">
+                  <div class="row">
+                    <div class="col-12 col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title text-primary">Selamat Datang <span class="fw-bold">Faishal
+                            Salim</span> !
+                        </h5>
+                        <p class="mb-4">
+                          Awali pekerjaan dengan <span class="fw-semibold">bismillah dan alhamdulillah,</span>
+                          semoga
+                          hari
+                          ini menyenangkan dan tanpa hambatan :)
+                        </p>
+                        </button> <button type="button"
+                          class="btn btn-sm rounded-pill btn-outline-primary bg-label-primary border-0 fw-semibold mb-2 mr-2">
+                          <span class="tf-icons bx bx-map"></span>&nbsp; SMPIQ Al-Bahjah Bacem
+                        </button> &nbsp;
+                        <button id="btnGroupDrop1" type="button" data-bs-toggle="dropdown-disable"
+                          class="btn btn-sm rounded-pill btn-outline-primary bg-label-primary border-0 fw-semibold mb-2 mr-2 dropdown-toggle hide-arrow"
+                          aria-haspopup="true" aria-expanded="false">
+                          <span class="tf-icons bx bx-user"></span>&nbsp; Admin TU </button> &nbsp;
+                          
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" selected href="javascript:void(0);">Admin Instansi</a>
+                          <a class="dropdown-item active" selected href="javascript:void(0);">Admin TU</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Pegawai</a>
+                          <a class="dropdown-item" href="index-siswa.html">Siswa</a>
                         </div>
-                        <div class="col-sm-4 text-center text-sm-left">
-                          <div class="card-body pb-0 px-0 px-md-4">
-                            <img src="../assets/img/illustrations/girl-muslim-with-laptop-light.png" height="140"
-                              alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png"
-                              data-app-light-img="illustrations/man-with-laptop-light.png" />
-                          </div>
-                        </div>
+
+                        <button type="button" class="btn btn-sm rounded-pill btn-outline-primary fw-semibold mb-2 mr-2"
+                          data-bs-toggle="collapse" href="#pengaturan-umum" role="button" aria-expanded="true"
+                          aria-controls="pengaturan-umum">
+                          <span class="tf-icons bx bx-cog"></span>&nbsp; Pengaturan Umum
+                        </button> &nbsp;
                       </div>
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-12 col-6 my-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="card-title d-flex align-items-start justify-content-between">
-                              <div class="avatar flex-shrink-0">
-                                <img src="../assets/img/icons/unicons/wallet.png" alt="chart success" class="rounded" />
-                              </div>
-                            </div>
-                            <span class="fw-semibold d-block mb-1">Transaksi</span>
-                            <h4 class="card-title mb-3 fw-normal">Siswa</h4>
-                            <a href="transaksi-siswa.html" type="button"
-                              class="btn btn-block rounded-pill btn-primary">Selengkapnya
-                            </a>
-
-                          </div>
-                        </div>
+                    <div class="col-12 col-md-2 ">
+                      <div class="card-body h-100 bg-label-primary">
+                        <img class="img-fluid d-none d-md-block"
+                          src="../assets/img/illustrations/girl-muslim-with-laptop-light.png" />
+                        <button class="btn btn-primary btn-sm w-100" type="button" data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">Bantuan</button>
                       </div>
-                      <div class="col-lg-3 col-md-12 col-6 my-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="card-title d-flex align-items-start justify-content-between">
-                              <div class="avatar flex-shrink-0">
-                                <img src="../assets/img/icons/unicons/wallet.png" alt="chart success" class="rounded" />
-                              </div>
-                            </div>
-                            <span class="fw-semibold d-block mb-1">Transaksi</span>
-                            <h4 class="card-title mb-3 fw-normal">Pegawai</h4>
-                            <a href="transaksi-pegawai.html" type="button"
-                              class="btn btn-block rounded-pill btn-primary">Selengkapnya
-                            </a>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-3 col-md-12 col-6 my-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="card-title d-flex align-items-start justify-content-between">
-                              <div class="avatar flex-shrink-0">
-                                <img src="../assets/img/icons/unicons/wallet.png" alt="chart success" class="rounded" />
-                              </div>
-                            </div>
-                            <span class="fw-semibold d-block mb-1">Transaksi</span>
-                            <h4 class="card-title mb-3 fw-normal">Instansi</h4>
-                            <a href="transaksi-instansi.html" type="button"
-                              class="btn btn-block rounded-pill btn-primary">Selengkapnya
-                            </a>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-3 col-md-12 col-6 my-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="card-title d-flex align-items-start justify-content-between">
-                              <div class="avatar flex-shrink-0">
-                                <img src="../assets/img/icons/unicons/wallet.png" alt="chart success" class="rounded" />
-                              </div>
-                            </div>
-                            <span class="fw-semibold d-block mb-1">Informasi</span>
-                            <h4 class="card-title mb-3 fw-normal">Keuangan</h4>
-                            <a href="keuangan.html" type="button"
-                              class="btn btn-block rounded-pill btn-primary">Selengkapnya
-                            </a>
-
-                          </div>
-                        </div>
-                      </div>
-
-
                     </div>
                   </div>
                 </div>
               </div>
-
-
-              <div class="col-lg-4 col-md-4 order-1">
-                <div class="alert alert-primary" role="alert">Berikut adalah daftar tugas Anda</div>
-                <div class="col-md">
-
-
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart" data-bs-scroll="true"
+                data-bs-backdrop="false" aria-labelledby="offcanvasStartLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasStartLabel" class="offcanvas-title">Bantuan
+                  </h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body my-auto mx-0 flex-grow-0">
+                  <div class="alert alert-info" role="alert">Berikut adalah daftar tugas Anda dan informasi terkait pada laman ini</div>
                   <div id="accordionIcon" class="accordion mt-3 accordion-without-arrow">
                     <div class="accordion-item my-4">
                       <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconOne">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                           data-bs-target="#accordionIcon-1" aria-controls="accordionIcon-1" aria-expanded="false">
-                          Pengaturan Umum
+                          <i class="bx bx-info-circle text-info">&nbsp;</i>Pengaturan Umum
                         </button>
                       </h2>
 
@@ -443,7 +394,7 @@
                       <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconTwo">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                           data-bs-target="#accordionIcon-2" aria-controls="accordionIcon-2" aria-expanded="false">
-                          Pembayaran Siswa
+                          <i class="bx bx-info-circle text-info">&nbsp;</i>Pembayaran Siswa
                         </button>
                       </h2>
                       <div id="accordionIcon-2" class="accordion-collapse collapse" data-bs-parent="#accordionIcon">
@@ -458,7 +409,7 @@
                       <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconThree">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                           data-bs-target="#accordionIcon-3" aria-expanded="false" aria-controls="accordionIcon-3">
-                          Pembayaran Pegawai
+                          <i class="bx bx-info-circle text-info">&nbsp;</i> Pembayaran Pegawai
                         </button>
                       </h2>
                       <div id="accordionIcon-3" class="accordion-collapse collapse" data-bs-parent="#accordionIcon">
@@ -473,7 +424,7 @@
                       <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconFour">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                           data-bs-target="#accordionIcon-4" aria-expanded="false" aria-controls="accordionIcon-4">
-                          Pembayaran Instansi
+                          <i class="bx bx-info-circle text-info">&nbsp;</i> Pembayaran Instansi
                         </button>
                       </h2>
                       <div id="accordionIcon-4" class="accordion-collapse collapse" data-bs-parent="#accordionIcon">
@@ -488,7 +439,7 @@
                       <h2 class="accordion-header text-body d-flex justify-content-between" id="accordionIconFive">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                           data-bs-target="#accordionIcon-5" aria-expanded="false" aria-controls="accordionIcon-5">
-                          Keuangan
+                          <i class="bx bx-info-circle text-info">&nbsp;</i> Keuangan
                         </button>
                       </h2>
                       <div id="accordionIcon-5" class="accordion-collapse collapse" data-bs-parent="#accordionIcon">
@@ -500,12 +451,147 @@
                     </div>
 
                   </div>
+
+                  <button type="button" class="btn btn-primary mb-2 d-grid w-100"
+                    data-bs-dismiss="offcanvas">Tutup</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row collapse" id="pengaturan-umum">
+
+              <div class="col-lg-2 col-md-4 col-6 mb-4 text-center">
+                <h5 class="fw-normal my-2 ">Pengaturan Umum</h5>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 mb-4 ">
+                <a href="instansi.html" type="button"
+                  class="btn d-block bg-white text-primary border-0 btn-outline-primary px-0" disabled><span
+                    class="badge badge-center rounded-pill bg-label-primary"><i class="bx bxs-bank"></i></span> Instansi
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <a href="periode-waktu.html" type="button"
+                  class="btn d-block bg-white text-primary border-0 btn-outline-primary"><span
+                    class="badge badge-center rounded-pill bg-label-primary"><i class="bx bxs-calendar"></i></span> Periode
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <a type="button"
+                  class="btn d-block bg-white text-primary border-0 btn-outline-primary dropdown-toggle hide-arrow"
+                  id="btnGroupDrop2" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"><span class="badge badge-center rounded-pill bg-label-primary"><i
+                      class="bx bx-male-female"></i></span> Pengguna
+                </a>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+                  <a class="dropdown-item" href="pengguna-siswa.html">Siswa</a>
+                  <a class="dropdown-item" href="pengguna-pegawai.html">Pegawai</a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <a type="button"
+                  class="btn d-block bg-white text-primary border-0 btn-outline-primary dropdown-toggle hide-arrow"
+                  id="btnGroupDrop2" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"><span class="badge badge-center rounded-pill bg-label-primary"><i
+                      class="bx bxs-graduation"></i></span> Kelas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+                  <a class="dropdown-item" href="kelas-formal.html">Kelas Formal</a>
+                  <a class="dropdown-item" href="kelas-non-formal.html">Kelas Non-Formal</a>
+                  <a class="dropdown-item" href="penempatan-siswa.html">Penempatan Siswa</a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <a type="button"
+                  class="btn d-block bg-white text-primary border-0 btn-outline-primary dropdown-toggle hide-arrow"
+                  id="btnGroupDrop2" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"><span class="badge badge-center rounded-pill bg-label-primary"><i
+                      class="bx bx-transfer-alt"></i></span> Transaksi
+                </a>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+                  <a class="dropdown-item" href="pengaturan-master-transaksi.html">Master Data</a>
+                  <a class="dropdown-item" href="pengaturan-transaksi-siswa.html">Dari Siswa</a>
+                  <a class="dropdown-item" href="pengaturan-transaksi-pegawai.html">Dari Pegawai</a>
+                  <a class="dropdown-item" href="pengaturan-transaksi-instansi.html">Dari Instansi</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                      <div class="avatar flex-shrink-0">
+                        <button type="button" class="btn btn-icon rounded-pill bg-label-primary">
+                          <i class="bx bx-transfer-alt bx-sm bx-tada-hover pt-1"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <span class="d-block mb-1 text-secondary small">Menu Utama</span>
+                    <h5 class="card-title mb-3 fw-normal">Transaksi Siswa</h5>
+                    <a href="transaksi-siswa.html" type="button"
+                      class="btn d-block rounded-pill btn-primary">Selengkapnya
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                      <div class="avatar flex-shrink-0">
+                        <button type="button" class="btn btn-icon rounded-pill bg-label-primary">
+                          <i class="bx bx-transfer-alt bx-sm bx-tada-hover pt-1"></i>
+                      </div>
+                    </div>
+                    <span class="d-block mb-1 text-secondary small">Menu Utama</span>
+                    <h5 class="card-title mb-3 fw-normal">Transaksi Pegawai</h5>
+                    <a href="transaksi-pegawai.html" type="button"
+                      class="btn d-block rounded-pill btn-primary">Selengkapnya
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                      <div class="avatar flex-shrink-0">
+                        <button type="button" class="btn btn-icon rounded-pill bg-label-primary">
+                          <i class="bx bx-transfer-alt bx-sm bx-tada-hover pt-1"></i>
+                      </div>
+                    </div>
+                    <span class="d-block mb-1 text-secondary small">Menu Utama</span>
+                    <h5 class="card-title mb-3 fw-normal">Transaksi Instansi</h5>
+                    <a href="transaksi-instansi.html" type="button"
+                      class="btn d-block rounded-pill btn-primary">Selengkapnya
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                      <div class="avatar flex-shrink-0">
+                        <button type="button" class="btn btn-icon rounded-pill bg-label-primary">
+                          <i class="bx bxs-bar-chart-alt-2 bx-sm bx-tada-hover pt-1"></i>
+                      </div>
+                    </div>
+                    <span class="d-block mb-1 text-secondary small">Menu Utama</span>
+                    <h5 class="card-title mb-3 fw-normal">Keuangan</h5>
+                    <a href="keuangan.html" type="button" class="btn d-block rounded-pill btn-primary">Selengkapnya
+                    </a>
+
+                  </div>
                 </div>
               </div>
 
             </div>
-
-            <div class="content-backdrop fade"></div>
           </div>
         </div>
       </div>

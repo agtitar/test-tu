@@ -34,6 +34,9 @@
     <script src="../assets/vendor/js/helpers.js"></script>
 
     <script src="../assets/js/config.js"></script>
+
+    <link rel="stylesheet" href="../assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.css">
+    <script src="../js/custom.js"></script>
 </head>
 
 <body>
@@ -293,7 +296,7 @@
                                                         <a type="button" class="btn btn-primary float-right"
                                                             href="siswa-tambah.html" data-bs-toggle="modal"
                                                             data-bs-target="#modal-tambah-tahun-ajaran">
-                                                            <span class="tf-icons bx bx-plus-medical "></span>&nbsp;
+                                                            <span class="tf-icons bx bx-plus "></span>&nbsp;
                                                             Tahun Ajaran
                                                         </a>
 
@@ -384,7 +387,7 @@
                                                                                 <i
                                                                                     class="bx bx-dots-vertical-rounded"></i>
                                                                             </button>
-                                                                            <div class="dropdown-menu" style="">
+                                                                            <div class="dropdown-menu">
                                                                                 <a class="dropdown-item"
                                                                                     data-bs-toggle="modal"
                                                                                     data-bs-target="#modal-ubah-tahun-ajaran"><i
@@ -423,7 +426,7 @@
                                                                                 <i
                                                                                     class="bx bx-dots-vertical-rounded"></i>
                                                                             </button>
-                                                                            <div class="dropdown-menu" style="">
+                                                                            <div class="dropdown-menu">
                                                                                 <a class="dropdown-item"
                                                                                     data-bs-toggle="modal"
                                                                                     data-bs-target="#modal-ubah-tahun-ajaran"><i
@@ -462,7 +465,7 @@
                                                                                 <i
                                                                                     class="bx bx-dots-vertical-rounded"></i>
                                                                             </button>
-                                                                            <div class="dropdown-menu" style="">
+                                                                            <div class="dropdown-menu">
                                                                                 <a class="dropdown-item"
                                                                                     data-bs-toggle="modal"
                                                                                     data-bs-target="#modal-ubah-tahun-ajaran"><i
@@ -536,7 +539,7 @@
                                             </h2>
 
                                             <div id="accordionIcon-1" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionIcon" style="">
+                                                data-bs-parent="#accordionIcon">
                                                 <div class="accordion-body">
                                                     Berisikan daftar tahun ajaran yang digunakan aplikasi dan
                                                     sebagai acuan data dalam penentuan periode waktu oleh variabel data
@@ -577,7 +580,7 @@
                                                 </button>
                                             </h2>
                                             <div id="accordionIcon-3" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionIcon" style="">
+                                                data-bs-parent="#accordionIcon">
                                                 <div class="accordion-body">
                                                     <span class="badge bg-label-secondary me-1" data-bs-toggle="tooltip"
                                                         data-bs-offset="0,4" data-bs-placement="right"
@@ -633,17 +636,16 @@
                                 placeholder="TA Tahun mulai / Tahun akhir" required />
                         </div>
                         <div class="col-12 col-md-6 mb-3">
-                            <label for="nameBasic" class="form-label">Mulai</label>
-                            <input class="form-control" type="month" id="mulai-tahun-ajaran"
-                                placeholder="Bulan & Tahun mulai">
+                            <label for="nameBasic" class="form-label">Mulai <b class="text-danger">*</b></label>
+                            <input type="date" id="mulai-periode-ta" placeholder="DD/MM/YYYY" class="form-control datepicker" />
                         </div>
                         <div class="col-12 col-md-6 mb-3">
-                            <label for="nameBasic" class="form-label">Akhir</label>
-                            <input class="form-control" type="month" id="akhir0tahun-ajaran"
-                                placeholder="Bulan & Tahun akhir">
+                            <label for="nameBasic" class="form-label">Akhir <b class="text-danger">*</b></label>
+                            <input type="date" id="akhir-periode-ta" placeholder="DD/MM/YYYY" class="form-control datepicker" />
                         </div>
                         <div class="mb-3 col-12">
-                            <label for="nameBasic" class="form-label">Pilih Status</label> <br>
+                            <label for="nameBasic" class="form-label">Pilih Status <b class="text-danger">*</b></label>
+                            <br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                                     value="option1" checked />
@@ -663,7 +665,7 @@
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
                                     value="option3" />
-                                <label class="form-check-label text-success" for="inlineRadio2">Selesai <small
+                                <label class="form-check-label text-success" for="inlineRadio3">Selesai <small
                                         class="text-secondary">(<i>Jika Tahun Ajaran sudah
                                             terlewati, data ditampilkan</i>)</small></label>
                             </div>
@@ -686,7 +688,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">Tambah Tahun Ajaran</h5>
+                    <h5 class="modal-title" id="exampleModalLabel1">Ubah Tahun Ajaran</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -697,17 +699,16 @@
                                 placeholder="TA Tahun mulai / Tahun akhir" value="TA 2022 / 2023" />
                         </div>
                         <div class="col-12 col-md-6 mb-3">
-                            <label for="nameBasic" class="form-label">Mulai</label>
-                            <input class="form-control" type="month" id="mulai-tahun-ajaran"
-                                placeholder="Bulan & Tahun mulai" value="2022-07">
+                            <label for="nameBasic" class="form-label">Mulai <b class="text-danger">*</b></label>
+                            <input type="date" id="mulai-periode-ta" placeholder="DD/MM/YYYY" class="form-control" />
                         </div>
                         <div class="col-12 col-md-6 mb-3">
-                            <label for="nameBasic" class="form-label">Akhir</label>
-                            <input class="form-control" type="month" id="akhir0tahun-ajaran"
-                                placeholder="Bulan & Tahun akhir" value="2023-08">
+                            <label for="nameBasic" class="form-label">Akhir <b class="text-danger">*</b></label>
+                            <input type="date" id="akhir-periode-ta" placeholder="DD/MM/YYYY" class="form-control" />
                         </div>
                         <div class="mb-3 col-12">
-                            <label for="nameBasic" class="form-label">Pilih Status</label> <br>
+                            <label for="nameBasic" class="form-label">Pilih Status <b class="text-danger">*</b></label>
+                            <br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                                     value="option1" checked />
@@ -727,7 +728,7 @@
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
                                     value="option3" />
-                                <label class="form-check-label text-success" for="inlineRadio2">Selesai <small
+                                <label class="form-check-label text-success" for="inlineRadio3">Selesai <small
                                         class="text-secondary">(<i>Jika Tahun Ajaran sudah
                                             terlewati, data ditampilkan</i>)</small></label>
                             </div>
@@ -762,6 +763,8 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <script src="../assets/js/sweetalert.min.js"></script>
+
+    <script src="../assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
 
     <script>
         function sweet() {

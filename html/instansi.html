@@ -217,18 +217,44 @@
               </div>
             </div>
 
-
             <ul class="navbar-nav flex-row align-items-center ms-auto">
 
-              <li class="nav-item lh-1 me-3">
-                <span class="github-button" href="#" data-icon="octicon-star" data-size="large">Faishal
-                  Salim</span>
+              <li class="nav-item me-2 navbar-dropdown dropdown-user dropdown"><a
+                  class="fw-semibold bg-label-warning small rounded-pill p-2 nav-link dropdown-toggle hide-arrow"
+                  href="#" data-bs-toggle="dropdown">SMP
+                  <span class="bx bx-user text-white bg-warning rounded-pill p-1"></span></a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><span class="dropdown-item-text small text-muted">Peran Anda</span></li>
+                  <li>
+                    <a class="dropdown-item" selected href="#">
+                      <span class="bx bx-user text-white bg-danger rounded-pill p-1 mt-1 me-2"></span></i>
+                      <span class="align-middle pb-2">Admin Instansi</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" selected href="#">
+                      <span class="bx bx-user text-white bg-warning rounded-pill p-1 mt-1 me-2"></span></i>
+                      <span class="align-middle pb-2">Admin TU</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="bx bx-user text-white bg-info rounded-pill p-1 mt-1 me-2"></span></i>
+                      <span class="align-middle pb-2">Guru</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="bx bx-user text-white bg-primary rounded-pill p-1 mt-1 me-2"></span></i>
+                      <span class="align-middle pb-2">Siswa</span>
+                    </a>
+                  </li>
+                </ul>
               </li>
-
               <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                   <div class="avatar avatar-online">
-                    <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    <img src="../assets/img/avatars/muslim-3.jpg" alt class="w-px-40 h-auto rounded-circle" />
                   </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -237,12 +263,12 @@
                       <div class="d-flex">
                         <div class="flex-shrink-0 me-3">
                           <div class="avatar avatar-online">
-                            <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            <img src="../assets/img/avatars/muslim-3.jpg" alt class="w-px-40 h-auto rounded-circle" />
                           </div>
                         </div>
                         <div class="flex-grow-1">
                           <span class="fw-semibold d-block">Faishal Salim</span>
-                          <small class="text-muted">Admin Instansi</small>
+                          <small class="text-muted">1020193124</small>
                         </div>
                       </div>
                     </a>
@@ -251,9 +277,9 @@
                     <div class="dropdown-divider"></div>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="profilku.html">
                       <i class="bx bx-user me-2"></i>
-                      <span class="align-middle">Profilku</span>
+                      <span class="align-middle pb-2">Profilku</span>
                     </a>
                   </li>
 
@@ -263,7 +289,7 @@
                   <li>
                     <a class="dropdown-item" href="masuk.html">
                       <i class="bx bx-power-off me-2"></i>
-                      <span class="align-middle">Keluar Apps</span>
+                      <span class="align-middle pb-2">Keluar Apps</span>
                     </a>
                   </li>
                 </ul>
@@ -301,7 +327,8 @@
                           <p>Jl. Al-Mahmud 2 No.1 Desa Bacem, Bacem, Kec. Ponggok, Kab.
                             Blitar Prov. Jawa Timur</p>
                         </div>
-                        <a href="javascript:void(0)" class="btn btn-primary text-nowrap">
+                        <a href="javascript:void(0)" class="btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#modal-ubah-instansi">
                           <i class='bx bxs-pencil'></i> Ubah
                         </a>
                       </div>
@@ -313,61 +340,166 @@
 
             <div class="row">
               <div class="col-12 col-md-5">
-                <div class="card card-action">
-                  <div class="card-header align-items-center">
-                    <h5 class="card-action-title mb-0">Kontak</h5>
-                    <div class="card-action-element">
-                      <div class="dropdown">
-                        <button type="button" class="btn dropdown-toggle hide-arrow p-0" data-bs-toggle="dropdown"
-                          aria-expanded="false"><i class="bx bx-dots-vertical-rounded"></i></button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li><a class="dropdown-item" href="javascript:void(0);">Ubah data</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-unstyled mb-0 mt-3">
-                      <li class="d-flex align-items-center mb-3"><i class="bx bx-phone"></i><span
-                          class="fw-semibold mx-2">Telpon</span> <span>(123) 456-7890</span></li>
-                      <li class="d-flex align-items-center mb-3"><i class="bx bxl-whatsapp"></i><span
-                          class="fw-semibold mx-2">WhatsApp</span> <span>08213981263</span></li>
-                      <li class="d-flex align-items-center mb-3"><i class="bx bx-envelope"></i><span
-                          class="fw-semibold mx-2">Email</span> <span>albahjah@edu.co.id</span></li>
-                    </ul>
-                  </div>
-                </div>
+                <div class="card-body">
 
+                  <h5 class="card-action-title mb-0">Kontak & Sosial Media</h5>
+                  <ul class="list-unstyled mb-0 mt-3">
+                    <li class="d-flex align-items-center mb-3"><i class="bx bx-phone"></i><span
+                        class="fw-semibold mx-2">Telpon</span> <span>(123) 456-7890</span></li>
+                    <li class="d-flex align-items-center mb-3"><i class="bx bxl-whatsapp"></i><span
+                        class="fw-semibold mx-2">WhatsApp</span> <span>08213981263</span></li>
+                    <li class="d-flex align-items-center mb-3"><i class="bx bx-envelope"></i><span
+                        class="fw-semibold mx-2">Email</span> <span>albahjah@edu.co.id</span></li>
+                    <li class="d-flex align-items-center mb-3"><i class="bx bx-globe"></i><span
+                        class="fw-semibold mx-2">Website</span> <span>www.smpiquabblitar.sch.id</span></li>
+                    <li class="d-flex align-items-center mb-3"><i class="bx bxl-youtube"></i><span
+                        class="fw-semibold mx-2">Youtube</span> <span>SMPIslamQuraniAlBahjahBlitar</span></li>
+                  </ul>
+                </div>
               </div>
               <div class="col-12 col-md-7">
 
-                <div class="card card-action mb-4">
-                  <div class="card-header align-items-center">
-                    <h5 class="card-action-title mb-0">Informasi Tambahan</h5>
-                    <div class="card-action-element">
-                      <div class="dropdown">
-                        <button type="button" class="btn dropdown-toggle hide-arrow p-0" data-bs-toggle="dropdown"
-                          aria-expanded="false"><i class="bx bx-dots-vertical-rounded"></i></button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li><a class="dropdown-item" href="javascript:void(0);">Ubah data</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-secondary"><i>Belum ada informasi tambahan</i></p>
-                  </div>
+                <div class="card-body">
+                  <h5 class="card-action-title mb-0">Informasi Tambahan</h5><br>
+                  <p class="text-secondary">Program Unggulan: <br>
+                    📖 Tahfidz Qur'an
+                    📖 Dinniya
+                    📖 Akhlak
+                    📖 Bahasa Arab
+                    📖 Bahasa Inggris
+                    🚲 E-Spedah</p>
                 </div>
-
               </div>
             </div>
-
-            <div class="content-backdrop fade"></div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Modal Ubah Data Instansi-->
+    <div class="modal fade" id="modal-ubah-instansi" tabindex="-1" data-bs-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel1">Ubah Informasi Instansi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="accordion accordion-without-arrow" id="accordionStyle1">
+              <div class="accordion-item card">
+                <h2 class="accordion-header">
+                  <button type="button" class="accordion-button text-primary" data-bs-toggle="collapse"
+                    data-bs-target="#accordionStyle1-1" aria-expanded="true"><span
+                      class="badge badge-center rounded-pill bg-label-primary">1</span>&nbsp;
+                    Informasi Utama
+                  </button>
+                </h2>
+
+                <div id="accordionStyle1-1" class="accordion-collapse collapse  show" data-bs-parent="#accordionStyle1">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-12 col-md-12 mb-3">
+                        <label for="namaBasic" class="form-label">Nama Instansi <b class="text-danger">*</b></label>
+                        <input type="text" id="namaBasic" class="form-control"
+                          placeholder="Tuliskan nama lengkap instansi" required value="SMPIQ Al-Bahjah Bacem" />
+                      </div>
+                      <div class="col-6 col-md-6 mb-3">
+                        <label for="jenjangSelect" class="form-label">Pilih Jenjang <b class="text-danger">*</b></label>
+                        <select id="jenjangSelect" class="form-select">
+                          <option disabled="" selected="" value="">Pilih Jenjang
+                          </option>
+                          <option value="1">SD</option>
+                          <option value="2" selected>SMP</option>
+                          <option value="3">SMA</option>
+                        </select>
+                      </div>
+                      <div class="col-6 col-md-6 mb-3">
+                        <label for="statusSelect" class="form-label">Pilih Status <b class="text-danger">*</b></label>
+                        <select id="statusSelect" class="form-select">
+                          <option disabled="" selected="" value="">Pilih Status
+                          </option>
+                          <option value="1">Negeri</option>
+                          <option value="2" selected>Swasta</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-md-12 mb-3">
+                        <label for="alamatBasic" class="form-label">Alamat lengkap <b class="text-danger">*</b></label>
+                        <input type="text" id="alamatBasic" class="form-control"
+                          placeholder="Tuliskan alamat lengkap instansi" required
+                          value="Jl. Al-Mahmud 2 No.1 Desa Bacem, Bacem, Kec. Ponggok, Kab. Blitar Prov. Jawa Timur" />
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item card">
+                <h2 class="accordion-header">
+                  <button type="button" class="accordion-button collapsed text-primary" data-bs-toggle="collapse"
+                    data-bs-target="#accordionStyle1-2" aria-expanded="false"><span
+                      class="badge badge-center rounded-pill bg-label-primary">2</span>&nbsp; Kontak & Sosmed
+                  </button>
+                </h2>
+                <div id="accordionStyle1-2" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="namaKontak1" class="form-label">Telpon </label>
+                        <input type="text" id="namaKontak1" class="form-control"
+                          placeholder="Tuliskan nomor telpon yang aktif" required value="(123) 456-7890" />
+                      </div>
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="namaKontak2" class="form-label">WhatsApp </label>
+                        <input type="text" id="namaKontak2" class="form-control"
+                          placeholder="Tuliskan nomor whatsapp yang aktif" required value="08213981263" />
+                      </div>
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="namaKontak3" class="form-label">Email </label>
+                        <input type="text" id="namaKontak3" class="form-control"
+                          placeholder="Tuliskan alamat email yang aktif" required value="albahjah@edu.co.id" />
+                      </div>
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="namaKontak4" class="form-label">Website </label>
+                        <input type="text" id="namaKontak4" class="form-control"
+                          placeholder="Tuliskan alamat website yang aktif" required value="www.smpiquabblitar.sch.id" />
+                      </div>
+                      <div class="col-12 col-md-12 mb-3">
+                        <label for="namaKontak5" class="form-label">Youtube </label>
+                        <input type="text" id="namaKontak5" class="form-control"
+                          placeholder="Tuliskan channel youtube yang aktif" required value="SMPIslamQuraniAlBahjahBlitar" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card accordion-item active mb-2">
+                <h2 class="accordion-header">
+                  <button type="button" class="accordion-button collapsed text-primary" data-bs-toggle="collapse"
+                    data-bs-target="#accordionStyle1-3" aria-expanded="false"><span
+                      class="badge badge-center rounded-pill bg-label-primary">3</span>&nbsp; Tambahan
+                  </button>
+                </h2>
+                <div id="accordionStyle1-3" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+                  <div class="accordion-body">
+                    <label for="exampleFormControlTextarea1" class="form-label">Tuliskan informasi tambahan</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Program Unggulan:
+                      📖 Tahfidz Qur'an 📖 Dinniya 📖 Akhlak 📖 Bahasa Arab 📖 Bahasa Inggris 🚲 E-Spedah</textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              Batal
+            </button>
+            <button type="button" class="btn btn-primary" onclick="sweet()" data-bs-dismiss="modal">Simpan</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
@@ -383,11 +515,22 @@
 
     <script src="../assets/js/dashboards-analytics.js"></script>
 
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
     <!-- tambahan -->
     <script src="../assets/js/pages-instansi.js"></script>
 
+    <script src="../assets/js/sweetalert.min.js"></script>
+
+    <script>
+      function sweet() {
+        swal({
+          title: "Data berhasil disimpan!",
+          // text: "You clicked the button!",
+          icon: "success",
+          button: false,
+          timer: 2000,
+        });
+      }
+    </script>
 </body>
 
 </html>
